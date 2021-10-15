@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Group 12">
+    <title>Travel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <header>
+            <a  href="#" 
+                class="logo"><span><img src="images/Logo OB Web small.jpg" alt="logo"></span></a>
+            
+            <div class="search-box">
+                <button class="search">
+                    <i class="fas fa-search"></i>
+                </button>  
+                <input type="text" placeholder="Tìm kiếm..." class="search-btn_input"></i>
+            </div> 
+            <nav class="navbar">
+                <ul class="icons">
+                    <li><i class="fas fa-home" id="home-btn"></i>
+                        <a href="#home" class="active">Trang chủ</a></li>
+                    
+                    <li><i class="fas fa-umbrella-beach" id="feature-btn"></i>
+                        <a href="#feature">Khám Phá</a></li>
+
+                    <li><i class="fas fa-hotel" id="hotel-btn"></i>
+                        <a href="#hotel">Khách sạn</a></li>
+
+                    <li><i class="fas fa-bus" id="bus-btn"></i>
+                        <a href="#transport">Di chuyển</a></li>
+
+                    <li><i class="fas fa-utensils" id="restaurant-btn"></i>
+                        <a href="#restaurant">Nhà hàng</a></li>
+
+                    <li><i class="fas fa-phone" id="phone-btn"></i>
+                        <a href="#contact">Liên hệ</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <i class="fas fa-shopping-cart" id="cart-btn"></i>
+                <i class="fas fa-user" id="login-btn"></i>
+                <i class="fa fa-gear" id="setting-btn"></i>
+            </div>
+
+            <div class="fas fa-bars"></div>
+
+        </header>
+
+        <section class="home" id="home">
+
+            <div class="video">
+                <video src="images/ocean.mp4" loop muted autoplay></video>
+            </div>
+
+            <div class="content">
+                <h1>Explore New Places, <br> Advanrute Awaits.</h1>
+                <p>Đích đến của chúng ta không phải là một vùng đất, mà là một cách nhìn mới.<br>
+                Khoảnh khắc khi bạn đến được cái đích của chuyến đi<br>
+                Nhìn ngắm mọi thứ xinh đẹp đang thu vào tầm mắt<br>
+                Lúc đó bạn sẽ nhận ra mọi sự nỗ lực của mình là vô cùng xứng đáng.</p>
+            </div>
+
+            <div class="form-container">
+                <form action="">
+
+                    <h3>Điểm đến của bạn</h3>
+
+                    <span>Địa điểm</span>
+                    <input type="text" placeholder="Nơi bạn muốn đến">
+
+                    <span>Số lượng người</span>
+                    <input type="number" placeholder="0">
+                    
+                    <span>Ngày khởi hành</span>
+                    <input type="date">
+
+                    <span>Ngày kết thúc</span>
+                    <input type="date">
+
+                    <input type="submit" value="Tìm kiếm">
+
+                </form>
+            </div>
+        </section>
+
+        <section class="feature" id="feature">
+
+            <h1 class="heading"><span>Khám Phá Các Địa Điểm Nổi Tiếng</h1>
+            
+            <div class="card-container">
+
+                <div class="card">
+                    <span class="discount">-35%</span>
+                    <img src="images/hawaii.jpg" alt="hawaii">
+                    <div class="content">
+                        <h3 class="title">hawaii</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Totam voluptatum officiis aperiam deserunt harum? Doloribus
+                        et pariatur soluta quibusdam eum.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="#"><button class="btn">check out!</button></a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/erypt.jpg" alt="erypt">
+                    <div class="content">
+                        <h3 class="title">erypt</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Totam voluptatum officiis aperiam deserunt harum? Doloribus
+                        et pariatur soluta quibusdam eum.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="#"><button class="btn">check out!</button></a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <span class="discount">-45%</span>
+                    <img src="images/india.jpg" alt="india">
+                    <div class="content">
+                        <h3 class="title">india</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Totam voluptatum officiis aperiam deserunt harum? Doloribus
+                        et pariatur soluta quibusdam eum.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="#"><button class="btn">check out!</button></a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <span class="discount">-35%</span>
+                    <img src="images/hawaii.jpg" alt="hawaii">
+                    <div class="content">
+                        <h3 class="title">hawaii</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Totam voluptatum officiis aperiam deserunt harum? Doloribus
+                        et pariatur soluta quibusdam eum.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="#"><button class="btn">check out!</button></a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/erypt.jpg" alt="erypt">
+                    <div class="content">
+                        <h3 class="title">erypt</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Totam voluptatum officiis aperiam deserunt harum? Doloribus
+                        et pariatur soluta quibusdam eum.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="#"><button class="btn">check out!</button></a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <span class="discount">-45%</span>
+                    <img src="images/india.jpg" alt="india">
+                    <div class="content">
+                        <h3 class="title">india</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Totam voluptatum officiis aperiam deserunt harum? Doloribus
+                        et pariatur soluta quibusdam eum.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="#"><button class="btn">check out!</button></a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <span class="discount">-35%</span>
+                    <img src="images/hawaii.jpg" alt="hawaii">
+                    <div class="content">
+                        <h3 class="title">hawaii</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Totam voluptatum officiis aperiam deserunt harum? Doloribus
+                        et pariatur soluta quibusdam eum.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="#"><button class="btn">check out!</button></a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/erypt.jpg" alt="erypt">
+                    <div class="content">
+                        <h3 class="title">erypt</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Totam voluptatum officiis aperiam deserunt harum? Doloribus
+                        et pariatur soluta quibusdam eum.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="#"><button class="btn">check out!</button></a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <span class="discount">-45%</span>
+                    <img src="images/india.jpg" alt="india">
+                    <div class="content">
+                        <h3 class="title">india</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Totam voluptatum officiis aperiam deserunt harum? Doloribus
+                        et pariatur soluta quibusdam eum.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="#"><button class="btn">check out!</button></a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <span class="discount">-45%</span>
+                    <img src="images/india.jpg" alt="india">
+                    <div class="content">
+                        <h3 class="title">india</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Totam voluptatum officiis aperiam deserunt harum? Doloribus
+                        et pariatur soluta quibusdam eum.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="#"><button class="btn">check out!</button></a>
+                    </div>
+                </div>
+
+            </div>
+
+            
+
+            
+
+        </section>
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="main.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
