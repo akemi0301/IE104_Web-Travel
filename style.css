@@ -51,35 +51,38 @@ header{
 header .logo {
     color: #333;
     font-size: 3rem;
+    margin: 0;
 }
-header .logo span {
-    color: #0098a1;
-}
+
 header a span img{
     width: 150px;
+    display: block;
 }
-header .search-btn_input{
+header .search-input{
     border: none;
+    font-size: 18px;
     background-color: #f5f5f5;
-    font-size: 2.5rem;
+    position: absolute;
+    width: 20%;
+    margin: .5rem 0 .5rem 0;
 }
-header .search{
+.search-input input[type=text] {
+    border: none;  
+}
+header .search-icons{
     border: none;
     background-color: #f5f5f5;
     font-size: 2.5rem;
     color: #0098a1;
     cursor: pointer;
-    margin-right: 2rem;
 }
-header .search-box{
+header .search-bar{
     width: 25%;
     height: 100%;
     background-color: #f5f5f5;
     font-size: 25px;
-    padding-left: 38px;
-    padding-right: 12px;
     box-sizing: border-box;
-    /* white-space: nowrap; */
+    white-space: nowrap; 
     overflow: hidden;
     text-overflow: ellipsis;
     border-radius: 100px;
@@ -102,6 +105,13 @@ header .navbar ul li a{
     color: #333;
     transition: .2s linear;
 }
+header .icons-navbar{
+    font-size: 2rem;
+    color: #0098a1;
+    cursor: pointer;
+    margin-right: 2rem;
+    display: none;
+}
 header .icons i{
     font-size: 2.5rem;
     color: #0098a1;
@@ -121,6 +131,7 @@ header .fa-bars{
     color: #0098a1;
     cursor: pointer;
     display: none;
+    margin-right: 1rem;
 }
 .home{
     min-height: 100vh;
@@ -293,7 +304,7 @@ header .fa-bars{
     }
 } 
 
-@media (max-width: 768px){
+@media (max-width: 1600px){
     html{
         font-size: 55%;
     }
@@ -324,6 +335,12 @@ header .fa-bars{
     header .navbar ul li a{
         display: block;
         font-size: 3rem;
+    }
+    header .navbar ul li i{
+        display: block;
+        font-size: 3rem;
+        position: absolute;
+        margin: 1rem;
     }
     header .nav-toggle{
         top: 5.5rem;

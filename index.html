@@ -13,14 +13,14 @@
             <a  href="#" 
                 class="logo"><span><img src="images/Logo OB Web small.jpg" alt="logo"></span></a>
             
-            <div class="search-box">
-                <button class="search">
-                    <i class="fas fa-search"></i>
-                </button>  
-                <input type="text" placeholder="Tìm kiếm..." class="search-btn_input"></i>
+            <div class="search-bar">
+                <form action="search">
+                    <button type="submit" class="search-icons"><i class="fas fa-search"></i></button>  
+                    <input type="text" placeholder="Tìm kiếm..." class="search-input"></i>
+                </form>
             </div> 
             <nav class="navbar">
-                <ul class="icons">
+                <ul class="icons-navbar">
                     <li><i class="fas fa-home" id="home-btn"></i>
                         <a href="#home" class="active">Trang chủ</a></li>
                     
@@ -31,22 +31,23 @@
                         <a href="#hotel">Khách sạn</a></li>
 
                     <li><i class="fas fa-bus" id="bus-btn"></i>
-                        <a href="#transport">Di chuyển</a></li>
+                        <a href="#transport">Phương tiện</a></li>
 
                     <li><i class="fas fa-utensils" id="restaurant-btn"></i>
-                        <a href="#restaurant">Nhà hàng</a></li>
+                        <a href="#food">Ẩm thực</a></li>
 
                     <li><i class="fas fa-phone" id="phone-btn"></i>
                         <a href="#contact">Liên hệ</a></li>
                 </ul>
             </nav>
+            
             <div class="icons">
                 <i class="fas fa-shopping-cart" id="cart-btn"></i>
                 <i class="fas fa-user" id="login-btn"></i>
                 <i class="fa fa-gear" id="setting-btn"></i>
             </div>
 
-            <div class="fas fa-bars"></div>
+            <div><i class="fas fa-bars"></i></div>
 
         </header>
 
