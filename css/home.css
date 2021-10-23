@@ -1,3 +1,4 @@
+
 .home{
     min-height: 100vh;
     display: flex;
@@ -86,70 +87,62 @@
 }
 .heading{
     color:var(--main-color);
-    font-size: 3rem;
-    padding: 2rem;
-    padding-top: 5rem;
+    font-size: 2rem;
+    padding: 1rem;
+    padding-top: 2.5rem;
     text-align: center;
     letter-spacing: .2rem;
 }
 .introduction .card-container{
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content:center;
+    flex-wrap: nowrap;
     width: 100%;
 }
 .introduction .card-container .card{
-    width: 25rem;
-    margin: 2rem;
+    max-width: 16.6%;
+    margin: 1rem;
     background: #fff;
     border-radius: .5rem;
     box-shadow: 0 .3rem 5rem rgba(0,0,0,.3);
-    overflow:hidden;
     position: relative;
 }
+.introduction .card-container .card .slide-show{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
 .introduction .card-container .card img{
-    height: 25rem;
     width: 100%;
+    height: 300px;
     object-fit: cover;
 }
-.introduction .card-container .card .discount{
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    display: block;
-    height: 3.5rem;
-    width: 6rem;
-    background: #ff3300;
-    color: #fff;
-    line-height: 4rem;
-    text-align: center;
-    font-size: 2rem;
-}
 .introduction .card-container .content{
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     text-align: center;
 }
 .introduction .card-container .content .title{
     color: var(--main-color);
-    font-size: 3rem;
+    font-size: 1.5rem;
 
 }
 .introduction .card-container .content .p{
     color: #333;
     font-size: 1.3rem;
     padding: 1rem;
+    overflow: auto;
 }
 .introduction .card-container .content .stars i{
     padding: 0 .2rem;
-    font-size: 2rem;
+    font-size: 1.3rem;
     color: gold;
 }
 .introduction .card-container .content .btn{
-    font-size: 1.7rem;
-    margin-top: 1.4rem;
-    height: 3.5rem;
-    width: 12rem;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    height: 2.5rem;
+    width: 5rem;
     border-radius: .5rem;
     outline: none;
     border: none;
@@ -163,7 +156,65 @@
     border: .2rem solid var(--main-color);
     color: var(--main-color);
 }
+.card-favourite{
+    position: absolute;
+    top: 10px;
+    left: -13px;
+    color: red;
+    background-color: currentColor;
+    font-size: 1.3rem;
+    margin: 0 3px 0 5px;
+    line-height: 1.6rem;
+    padding-right: 5px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.card-favourite::after{
+    content: "";
+    position: absolute;
+    border-top: 9px solid currentColor;
+    border-left: 9px solid transparent;
+    left: 0;
+    bottom: -9px;
+    filter: brightness(50%);
+}
+.card-favourite span {
+    color: #fff;
+}
+.card-favourite i {
+    color: #fff;
+    padding-left: .3rem;
+}
+.card-sale-off{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 55px;
+    height: 50px;
+    background-color: rgba(255, 216, 64, .95);
 
+}
+.card-sale-off .discount{
+    color: red;
+    font-weight: 1000;
+    font-size: 1.3rem;
+
+}
+.card-sale-off .discount-label{
+    color: #fff;
+    font-weight: 1000;
+    position: relative;
+    left: 7px;
+}
+.card-sale-off::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    border-width: 0 27.5px 10px;
+    border-style: solid;
+    border-color: transparent rgba(255, 216, 64, .95) transparent rgba(255, 216, 64, .95);
+}
 @media screen and (max-width: 991px){
     .home{
         flex-flow: column;
