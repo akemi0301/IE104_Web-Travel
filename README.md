@@ -10,3 +10,16 @@
         });
     </script>
 </body>
+
+## Get footer
+trong folder css có file footer.css
+trong folder js có file footer.js
+=> muốn get footer thì trong file .html muốn get, gán link vào:
+    <head>
+        <link rel="stylesheet" href="css/footer.css">
+    </head>
+    
+    <body>
+        <footer><footer>
+        <script src="js/footer.js"></script>
+    </body>
