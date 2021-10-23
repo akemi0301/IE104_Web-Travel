@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+.main-wrap {
+  width: 100%;
+  background: #ededed;
+}
+
+.footer-wrap {
+  position: relative;
+  margin-top: 310px;
+  width: 100%;
+  padding: 40px;
+  background: #333;
+}
+
+.footer-wrap-1 {
+  display: flex;
+}
+
+.footer-section {
+  width: 22%;
+  display: block;
+  padding: 10px 35px;
+}
+
+.footer-section:last-of-type {
+  width: 34%;
+}
+
+.footer-section p {
+  font-size: 14px;
+  color: #ededed;
+}
+
+.footer-section h2 {
+  font-size: 18px;
+  color: #ededed;
+  margin-bottom: 8px;
+}
+
+.footer-section a {
+  font-size: 14px;
+  color: #ededed;
+  display: block;
+  text-decoration: none;
+  padding: 4px 0px;
+}
+
+form {
+  position: relative;
+}
+
+form input {
+  position: absolute;
+  height: 35px;
+  width: 220px;
+  margin: 8px 0px;
+  border: none;
+  outline: none;
+  padding: 6px;
+  font-size: 14px;
+}
+
+form .btn {
+  height: 35px;
+  background: #0098a1;
+  border: none;
+  padding: 0px 6px;
+  margin: 8px 0px;
+  position: absolute;
+  left: 60%;
+  font-weight: 600;
+  cursor: pointer;
+  color: #ededed;
+}
+
+.btn:hover {
+  background: #0098a1;
+}
+
+.line {
+  margin-top: 20px;
+  width: 100%;
+  height: 1px;
+  background: #0098a1;
+}
+
+.social-link {
+  padding-top: 25px;
+  text-align: center;
+}
+
+.social-link a {
+  text-decoration: none;
+  height: 26px;
+  display: inline-block;
+  width: 26px;
+  padding: 5px;
+  border-radius: 20px;
+  margin: 5px;
+  background: #0098a1;
+}
+
+.social-link a img {
+  width: 14px;
+  height: 14px;
+}
+
+.footer-bottom {
+  background: rgb(22, 22, 22);
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-bottom span {
+  color: #ededed;
+  font-size: 14px;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.footer-bottom a {
+  color: #ededed;
+  font-size: 14px;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.first-box {
+  margin-left: 20px;
+}
+
+.last-box {
+  margin-right: 20px;
+}
