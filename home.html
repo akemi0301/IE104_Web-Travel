@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+
+    <link rel="stylesheet" href="css/home.css">
+
+
+
+</head>
+<body>
+
+    <main>
+
+        <div id="includedContent"></div>
+        <section class="home" id="home">
+            
+            <div class="video">
+                <video src="images/ocean.mp4" loop muted autoplay></video>
+            </div>
+            
+        <div class="content">
+            <h1>Explore New Places, <br> Advanrute Awaits.</h1>
+            <p>Đích đến của chúng ta không phải là một vùng đất, mà là một cách nhìn mới.<br>
+            Khoảnh khắc khi bạn đến được cái đích của chuyến đi<br>
+            Nhìn ngắm mọi thứ xinh đẹp đang thu vào tầm mắt<br>
+            Lúc đó bạn sẽ nhận ra mọi sự nỗ lực của mình là vô cùng xứng đáng.</p>
+        </div>
+        
+        <div class="form-container">
+            <form action="">
+                
+                <h3>Điểm đến của bạn</h3>
+                
+                <span>Địa điểm</span>
+                <input type="text" placeholder="Nơi bạn muốn đến">
+                
+                <span>Số lượng người</span>
+                <input type="number" placeholder="0" min="1">
+                
+                <span>Ngày khởi hành</span>
+                <input type="date">
+                
+                <span>Ngày kết thúc</span>
+                <input type="date">
+                
+                <input type="submit" value="Tìm kiếm">
+                
+            </form>
+        </div>
+    </section>
+    
+    <section class="introduction" id="introduction">
+        
+        <h1 class="heading">Các Địa Điểm Nổi Tiếng</h1>
+        
+        <div class="card-container">
+            
+            <div class="card">
+                <span class="discount">-35%</span>
+                <img src="images/hawaii.jpg" alt="hawaii">
+                <div class="content">
+                    <h3 class="title">hawaii</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Totam voluptatum officiis aperiam deserunt harum? Doloribus
+                        et pariatur soluta quibusdam eum.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="#"><button class="btn">check out!</button></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/erypt.jpg" alt="erypt">
+                <div class="content">
+                    <h3 class="title">erypt</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Totam voluptatum officiis aperiam deserunt harum? Doloribus
+                    et pariatur soluta quibusdam eum.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#"><button class="btn">check out!</button></a>
+                </div>
+            </div>
+            
+            <div class="card">
+                <span class="discount">-45%</span>
+                <img src="images/india.jpg" alt="india">
+                <div class="content">
+                    <h3 class="title">india</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Totam voluptatum officiis aperiam deserunt harum? Doloribus
+                        et pariatur soluta quibusdam eum.</p>
+                        <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#"><button class="btn">check out!</button></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <span class="discount">-35%</span>
+                <img src="images/hawaii.jpg" alt="hawaii">
+                <div class="content">
+                    <h3 class="title">hawaii</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Totam voluptatum officiis aperiam deserunt harum? Doloribus
+                        et pariatur soluta quibusdam eum.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="#"><button class="btn">check out!</button></a>
+                    </div>
+            </div>
+            
+        </div>
+    </section>
+</main>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <script> 
+        $(function(){
+            $("#includedContent").load("header.html"); 
+        });
+    </script>
+
+
+</body>
+</html>
