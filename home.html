@@ -1,12 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang chủ</title>
     <link rel="stylesheet" href="css/home.css">
-    <!-- <link rel="stylesheet" href="css/footer.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/home.js"></script>
+    <script> 
+        $(function(){
+            $("#includedContent").load("header.html"); 
+        });
+    </script>
 
 </head>
 <body>
@@ -50,34 +58,216 @@
             </form>
         </div>
     </section>
-
     
-    <section class="famous-place" id="famous-place">
+    <section class=" grid famous-place" id="grid famous-place">
         
         <h1 class="heading">Các Địa Điểm Nổi Tiếng</h1>
-        
         <div class="card-container">
             
-            <div class="card 1">
+            <div class="card place-card-1">
 
                 <div class="slide-show saigon">
-                    <img class="slide-show-image" src="images/Saigon.jpg" alt="saigon">
-                    <img class="slide-show-image" src="images/kdl-suoi-tien.jpg" alt="saigon">
-                    <img class="slide-show-image" src="images/chua-buu-long.jpg" alt="saigon">
+                    <img class="slide-show-image" src="images/saigon-toan-canh.jpg" idx="0" alt="saigon">
+                    <img class="slide-show-image" src="images/saigon-kdl-suoi-tien.jpg" idx="1" alt="saigon">
+                    <img class="slide-show-image" src="images/saigon-chua-buu-long.jpg" idx="2" alt="saigon">
                 </div>
 
                 <div class="content">
-                    <h3 class="title">Hồ Chí Minh</h3>
-                    <p>Sài Gòn lại là thành phố của những chuyển động, sự sôi nổi, sầm uất bậc nhất cả nước nhưng lại đan xen một chút cổ kính,
-                    một chút châu Âu giữa lòng Việt Nam</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
+                    <div class="content-description">
+                        <h3 class="title">Hồ Chí Minh</h3>
+                        <p>Sài Gòn - Được mệnh danh là hòn ngọc Viễn Đông, thành phố của những chuyển động, sự sôi nổi, sầm uất bậc nhất cả nước nhưng lại đan xen một chút cổ kính,
+                        một chút châu Âu giữa lòng Việt Nam.</p>
                     </div>
-                    <a href="#"><button class="btn">Xem</button></a>
+                    
+                    <div class="content-reviews">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="#"><button class="btn">Khám Phá</button></a>
+                    </div>
+
+                </div>
+
+                <div class="card-favourite">
+                    <i class="fas fa-check"></i>
+                    <span>Yêu thích</span>
+                </div>
+
+                <div class="card-top">
+                    <span class="top-label">TOP</span>
+                </div>
+
+            </div>
+            
+            <div class="card place-card-2">
+                <div class="slide-show danang">
+                    <img class="slide-show-image" src="images/danang-mykhe.jpg" idx="0" alt="danang">
+                    <img class="slide-show-image" src="images/danang-cau-rong.jpg" idx="1" alt="danang">
+                    <img class="slide-show-image" src="images/danang-banahill.jpg" idx="2" alt="danang">
+                </div>
+                <div class="content">
+                    <div class="content-description">
+                        <h3 class="title">Đà Nẵng</h3>
+                        <p>Đà Nẵng - Được mệnh danh là một trong những thành phố đáng sống nhất Việt Nam. 
+                        Đà Nẵng không chỉ có biển xanh với những bãi cát trắng trải dài, mà còn mang trong mình vẻ đẹp hùng vĩ của núi rừng.</p>
+                    </div>
+                    <div class="content-reviews">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="#"><button class="btn">Khám Phá</button></a>
+                    </div>
+                </div>
+                <div class="card-favourite">
+                    <i class="fas fa-check"></i>
+                    <span>Yêu thích</span>
+                </div>
+                <div class="card-top">
+                    <span class="top-label">TOP</span>
+                </div>
+            </div>
+
+            <div class="card place-card-3">
+                <div class="slide-show dalat">
+                    <img class="slide-show-image" src="images/dalat-ga-dalat.jpg" idx="0" alt="dalat">
+                    <img class="slide-show-image" src="images/dalat-cong-troi.png" idx="1" alt="dalat">
+                    <img class="slide-show-image" src="images/dalat-quang-truong-trung-tam.jpg" idx="2" alt="dalat">
+                </div>
+                <div class="content">
+                    <div class="content-description">
+                        <h3 class="title">Đà Lạt</h3>
+                        <p>Đà Lạt - Được mệnh danh là thành phố ngàn hoa, xứ sở mù sương. 
+                        Cái khí trời, cỏ hoa, thiên nhiên và con người nơi đây đều gợi thương gợi nhớ. 
+                        Bởi vậy, không khó hiểu khi mảnh đất xinh đẹp này trở thành điểm đến trong mơ của dân ưa xê dịch.</p>
+                    </div>
+                    <div class="content-reviews">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="#"><button class="btn">Khám Phá</button></a>
+                    </div>
+                </div>
+                <div class="card-favourite">
+                    <i class="fas fa-check"></i>
+                    <span>Yêu thích</span>
+                </div>
+                <div class="card-top">
+                    <span class="top-label">TOP</span>
+                </div>
+            </div>
+
+            <div class="card place-card-4">
+                <div class="slide-show hanoi">
+                    <img class="slide-show-image" src="images/hanoi-ho-guom.jpg" idx="0" alt="hanoi">
+                    <img class="slide-show-image" src="images/hanoi-cau-hoan-kiem.jpg" idx="1" alt="hanoi">
+                    <img class="slide-show-image" src="images/hanoi-van-mieu-quoc-tu-giam.jpg" idx="2" alt="hanoi">
+                </div>
+                <div class="content">
+                    <div class="content-description">
+                        <h3 class="title">Hà Nội</h3>
+                        <p>Hà Nội “băm sáu” phố phường, Hà Nội trà chanh chém gió, Hà Nội trà đá vỉa hè… 
+                        Dường như những câu miêu tả đơn giản này lại có thể gom hết những điều bình dị nhất của mảnh đất thủ đô. 
+                        Cùng với lịch sử “nghìn năm văn hiến”, Hà Nội luôn thu hút du khách với một màu sắc đặc trưng, một nét văn hóa đậm đà bản sắc, 
+                        và một lối sống riêng chẳng thể lẫn với bất kỳ nơi nào khác.</p>
+                    </div>
+                    <div class="content-reviews">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="#"><button class="btn">Khám Phá</button></a>
+                    </div>
+                </div>
+                <div class="card-favourite">
+                    <i class="fas fa-check"></i>
+                    <span>Yêu thích</span>
+                </div>
+                <div class="card-top">
+                    <span class="top-label">TOP</span>
+                </div>
+            </div>            
+
+            <div class="card place-card-5">
+                <div class="slide-show quangninh">
+                    <img class="slide-show-image" src="images/quangninh-vinh-ha-long.jpg" idx="0" alt="quangninh">
+                    <img class="slide-show-image" src="images/quangninh-dao-quan-lan.jpg" idx="1" alt="quangninh">
+                    <img class="slide-show-image" src="images/quangninh-binh-lieu.jpg" idx="2" alt="quangninh">
+                </div>
+                <div class="content">
+                    <div class="content-description">
+                        <h3 class="title">Quảng Ninh</h3>
+                        <p>Quảng Ninh là một địa điểm không thể bỏ qua cho chuyến hành trình khám phá thiên nhiên Việt Nam kỳ vĩ. 
+                        Là một tỉnh duyên hải độc đáo với nửa diện tích là đất liền, nửa diện tích là biển, 
+                        Quảng Ninh hứa hẹn sẽ đưa bạn lên rừng, xuống biển, vi vu hải đảo xa xôi.</p>
+                    </div>
+                    <div class="content-reviews">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="#"><button class="btn">Khám Phá</button></a>
+                    </div>
+                </div>
+                <div class="card-favourite">
+                    <i class="fas fa-check"></i>
+                    <span>Yêu thích</span>
+                </div>
+                <div class="card-top">
+                    <span class="top-label">TOP</span>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="grid top-tour" id=" grid top-tour">
+        
+        <h1 class="heading">Các Tour Hàng Đầu</h1>
+        
+        <div class="card-container">
+            
+            <div class="card tour-card-1">
+                <img class="slide-show slide-show-tour" 
+                        src="https://res.klook.com/image/upload/c_fill,w_960,h_460,f_auto/w_80,x_15,y_15,g_south_west,l_klook_water/activities/ejrb53fyfd0mdapishcp.webp" 
+                        alt="vinh ha long">
+
+                <div class="content">
+                    <div class="content-description">
+                        <h3 class="title">Tour Du Thuyền Hạ Long</h3>
+                        <p>Ngắm nhìn khung cảnh tuyệt đẹp của Di sản Thiên nhiên Thế giới được UNESCO công nhận - Vịnh Hạ Long.
+                        Khám phá một hang động đá vôi với những nhũ đá và măng đá tuyệt đẹp và thưởng thức bữa tiệc hải sản thịnh soạn trên tàu.
+                        </p>
+                    </div>
+                    
+                    <div class="content-reviews">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="#"><button class="btn">Xem</button></a>
+                    </div>
+
                 </div>
 
                 <div class="card-favourite">
@@ -89,140 +279,164 @@
                     <span class="discount">-35%</span>
                     <span class="discount-label">GIẢM</span>
                 </div>
-
             </div>
-            
-            <div class="card 2">
-                <div class="slide-show danang">
-                    <img class="slide-show-image" src="images/Saigon.jpg" alt="saigon">
-                    <img class="slide-show-image" src="images/kdl-suoi-tien.jpg" alt="saigon">
-                    <img class="slide-show-image" src="images/chua-buu-long.jpg" alt="saigon">
-                </div>
+
+            <div class="card -tour-card-2">
+                <img class="slide-show slide-show-tour" 
+                    src="https://res.klook.com/image/upload/c_fill,w_960,h_460,f_auto/w_80,x_15,y_15,g_south_west,l_klook_water/activities/qzppftgwtrvuwygcmoaa.webp" 
+                    alt="tour banahill da nang">
+
                 <div class="content">
-                    <h3 class="title">Đà Nẵng</h3>
-                    <p>Sài Gòn lại là thành phố của những chuyển động, sự sôi nổi, sầm uất bậc nhất cả nước nhưng lại đan xen một chút cổ kính,
-                    một chút châu Âu giữa lòng Việt Nam</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
+                    <div class="content-description">
+                        <h3 class="title">Tour Tham Quan Bà Nà Hills</h3>
+                        <p>Tận hưởng cảm giác đắm chìm trong biển mây trên đường đi cáp treo lên đỉnh núi Bà Nà
+                        Chiêm ngưỡng khung cảnh tuyệt đẹp của núi và biển khi bạn đi dạo trên cầu Vàng với chiều dài 150m và ở độ cao 1,414m từ mực nước biển!
+                        </p>
                     </div>
-                    <a href="#"><button class="btn">Xem</button></a>
+                    
+                    <div class="content-reviews">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="#"><button class="btn">Xem</button></a>
+                    </div>
+
                 </div>
+
                 <div class="card-favourite">
                     <i class="fas fa-check"></i>
                     <span>Yêu thích</span>
                 </div>
+
                 <div class="card-sale-off">
                     <span class="discount">-45%</span>
                     <span class="discount-label">GIẢM</span>
                 </div>
-            </div>
 
-            <div class="card 3">
-                <div class="slide-show hanoi">
-                    <img class="slide-show-image" src="images/Saigon.jpg" alt="saigon">
-                    <img class="slide-show-image" src="images/kdl-suoi-tien.jpg" alt="saigon">
-                    <img class="slide-show-image" src="images/chua-buu-long.jpg" alt="saigon">
-                </div>
+            </div>
+            
+            <div class="card tour-card-3">
+                <img class="slide-show slide-show-tour" 
+                    src="https://res.klook.com/image/upload/c_fill,w_960,h_460,f_auto/w_80,x_15,y_15,g_south_west,l_klook_water/activities/mameq3jakxwg507nqeui.webp" 
+                    alt="tour saigon">
+
                 <div class="content">
-                    <h3 class="title">Hà Nội</h3>
-                    <p>Sài Gòn lại là thành phố của những chuyển động, sự sôi nổi, sầm uất bậc nhất cả nước nhưng lại đan xen một chút cổ kính,
-                    một chút châu Âu giữa lòng Việt Nam</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
+                    <div class="content-description">
+                        <h3 class="title">Tour Tham Quan Sài Gòn</h3>
+                        <p>Tận dụng một ngày khám phá thành phố Hồ Chí Minh,
+                        Tham quan dinh Độc Lập và Bảo tàng Chứng tích Chiến Tranh, tìm hiểu thêm về lịch sử Việt Nam.
+                        Chụp hình những khung cảnh hàng đầu thành phố như Bưu Điện Thành Phố và Nhà Thờ Đức Bà.
+                        </p>
                     </div>
-                    <a href="#"><button class="btn">Xem</button></a>
+                    
+                    <div class="content-reviews">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="#"><button class="btn">Xem</button></a>
+                    </div>
+
                 </div>
+
                 <div class="card-favourite">
                     <i class="fas fa-check"></i>
                     <span>Yêu thích</span>
                 </div>
+
                 <div class="card-sale-off">
                     <span class="discount">-25%</span>
                     <span class="discount-label">GIẢM</span>
                 </div>
+
             </div>
 
-            <div class="card 4">
-                <div class="slide-show dalat">
-                    <img class="slide-show-image" src="images/Saigon.jpg" alt="saigon">
-                    <img class="slide-show-image" src="images/kdl-suoi-tien.jpg" alt="saigon">
-                    <img class="slide-show-image" src="images/chua-buu-long.jpg" alt="saigon">
-                </div>
+            <div class="card tourr-card-4">
+                <img class="slide-show slide-show-tour" 
+                    src="https://res.klook.com/image/upload/c_fill,w_960,h_460,f_auto/w_80,x_15,y_15,g_south_west,l_klook_water/activities/imx3kovgwnk1nly91fqo.webp" 
+                    alt="tour my son">
+
                 <div class="content">
-                    <h3 class="title">Đà Lạt</h3>
-                    <p>Sài Gòn lại là thành phố của những chuyển động, sự sôi nổi, sầm uất bậc nhất cả nước nhưng lại đan xen một chút cổ kính,
-                    một chút châu Âu giữa lòng Việt Nam</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
+                    <div class="content-description">
+                        <h3 class="title">Tour Thánh Địa Mỹ Sơn</h3>
+                        <p>Khám phá một trong những địa điểm khảo cổ học lớn nhất Đông Nam Á.
+                        Tìm hiểu nguồn gốc lịch sử, văn hóa và lối sống cổ xưa của Việt Nam.
+                        </p>
                     </div>
-                    <a href="#"><button class="btn">Xem</button></a>
+                    
+                    <div class="content-reviews">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="#"><button class="btn">Xem</button></a>
+                    </div>
+
                 </div>
+
                 <div class="card-favourite">
                     <i class="fas fa-check"></i>
                     <span>Yêu thích</span>
                 </div>
+
+                <div class="card-sale-off">
+                    <span class="discount">-55%</span>
+                    <span class="discount-label">GIẢM</span>
+                </div>
+
+            </div>
+
+            <div class="card tour-card-5">
+                <img class="slide-show slide-show-tour" 
+                    src="https://res.klook.com/image/upload/u_activities:bbbqta4oj0sq6twq62je,h_1.0,ar_960:460,c_scale,e_blur:10000/c_fill,w_960,h_460,f_auto/w_80,x_15,y_15,g_south_west,l_klook_water/activities/bbbqta4oj0sq6twq62je.webp" 
+                    alt="tour sa pa">
+
+                <div class="content">
+                    <div class="content-description">
+                        <h3 class="title">Tour Tham Quan Sa Pa</h3>
+                        <p>Khám phá vẻ đẹp của thị trấn Sapa, thăm các ngôi làng và tìm hiểu về văn hoá của đồng bào vùng cao.
+                        Tận hưởng chuyến tham quan thật sự thư giãn với các dịch vụ đã được bao gồm như khách sạn 3 sao, xe, và các bữa ăn trong chương trình.
+                        </p>
+                    </div>
+                    
+                    <div class="content-reviews">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="#"><button class="btn">Xem</button></a>
+                    </div>
+
+                </div>
+
+                <div class="card-favourite">
+                    <i class="fas fa-check"></i>
+                    <span>Yêu thích</span>
+                </div>
+
                 <div class="card-sale-off">
                     <span class="discount">-55%</span>
                     <span class="discount-label">GIẢM</span>
                 </div>
             </div>
-
-            <div class="card 5">
-                <div class="slide-show sapa">
-                    <img class="slide-show-image" src="images/Saigon.jpg" alt="saigon">
-                    <img class="slide-show-image" src="images/kdl-suoi-tien.jpg" alt="saigon">
-                    <img class="slide-show-image" src="images/chua-buu-long.jpg" alt="saigon">
-                </div>
-                <div class="content">
-                    <h3 class="title">Sa Pa</h3>
-                    <p>Sài Gòn lại là thành phố của những chuyển động, sự sôi nổi, sầm uất bậc nhất cả nước nhưng lại đan xen một chút cổ kính,
-                    một chút châu Âu giữa lòng Việt Nam</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <a href="#"><button class="btn">Xem</button></a>
-                </div>
-                <div class="card-favourite">
-                    <i class="fas fa-check"></i>
-                    <span>Yêu thích</span>
-                </div>
-                <div class="card-sale-off">
-                    <span class="discount">-35%</span>
-                    <span class="discount-label">GIẢM</span>
-                </div>
-            </div>
-
             
         </div>
     </section>
+
+   
 </main>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="js/home.js"></script>
-    <script> 
-        $(function(){
-            $("#includedContent").load("header.html"); 
-        });
-    </script>
-
-    <!-- <footer><footer>
-    <script src="js/footer.js"></script> -->
-
 </body>
 </html>

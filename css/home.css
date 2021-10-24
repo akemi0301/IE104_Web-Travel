@@ -81,68 +81,97 @@
 
 
 
-.famous-place{
-    height: 100vh;
+.grid{
+    height: 100%;
     background: #f9f9f9;
 }
-.famous-place .heading{
+.grid .heading{
     color:var(--main-color);
     font-size: 2rem;
     padding: 1rem;
     padding-top: 2.5rem;
     text-align: center;
     letter-spacing: .2rem;
+    padding: 2rem;
 }
-.famous-place .card-container{
+.grid .card-container{
     display: flex;
     align-items: center;
     justify-content:center;
     flex-wrap: nowrap;
     width: 100%;
 }
-.famous-place .card-container .card{
+.grid .card-container .card{
     max-width: 16.6%;
+    width: 500px;
+    height: 550px;
     margin: 1rem;
     background: #fff;
-    border-radius: .5rem;
+    border-radius: .7rem;
     box-shadow: 0 .3rem 5rem rgba(0,0,0,.3);
     position: relative;
+    transition: transform linear .2s;
 }
-.famous-place .card-container .card .slide-show{
+.grid .card-container .card:hover{
+    transform: translateY(-5px);
+    box-shadow:  0 1px 20px 0 rgba(0,0,0,.9);
+}
+.grid .card-container .slide-show{
+    width: 100%;
+    height: 250px;
     display: flex;
     position: relative;
+    justify-content: center;
     overflow: hidden;
+    border-top-left-radius: .7rem;
+    border-top-right-radius: .7rem;
 }
-.famous-place .card-container .card img{
-    width: 100%;
-    height: 300px;
+.grid .card-container .slide-show img{
+    position: absolute;
     object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
-.famous-place .card-container .content{
-    padding-bottom: 1rem;
+.grid .card-container .card img.slide-show:not(:first-child){
+    display: none; 
+}
+.grid .card-container .content{
+    width: 100%;
+    height: 350px;
     text-align: center;
 }
-.famous-place .card-container .content .title{
+.grid .card-container .content-description{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    padding: .5rem;
+}
+.grid .card-container .content .title{
     color: var(--main-color);
     font-size: 1.5rem;
-
+    margin-top: .5rem;
 }
-.famous-place .card-container .content .p{
+.grid .card-container .content .p{
+    height: 150px;
     color: #333;
     font-size: 1.3rem;
-    padding: 1rem;
-    overflow: auto;
+    
 }
-.famous-place .card-container .content .stars i{
-    padding: 0 .2rem;
-    font-size: 1.3rem;
+.grid .card-container .content-reviews{
+    width: 100%;
+    height: 100px;
+    /* border: 1px solid black; */
+}
+.grid .card-container .content .stars i{
+    font-size: 1rem;
     color: gold;
+    margin-top: .5rem;
 }
-.famous-place .card-container .content .btn{
-    font-size: 1.3rem;
-    margin-top: 1rem;
+.grid .card-container .content .btn{
+    font-size: 1rem;
+    margin-top: .5rem;
     height: 2.5rem;
-    width: 5rem;
+    width: 8rem;
     border-radius: .5rem;
     outline: none;
     border: none;
@@ -151,12 +180,12 @@
     cursor: pointer;
     transition: .2s linear;
 }
-.famous-place .card-container .content .btn:hover{
+.grid .card-container .content .btn:hover{
     background: none;
     border: .2rem solid var(--main-color);
     color: var(--main-color);
 }
-.famous-place .card-favourite{
+.grid .card-favourite{
     position: absolute;
     top: 10px;
     left: -13px;
@@ -169,7 +198,7 @@
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-.famous-place .card-favourite::after{
+.grid .card-favourite::after{
     content: "";
     position: absolute;
     border-top: 9px solid currentColor;
@@ -178,14 +207,39 @@
     bottom: -9px;
     filter: brightness(50%);
 }
-.famous-place .card-favourite span {
+.grid .card-favourite span {
     color: #fff;
 }
-.famous-place .card-favourite i {
+.grid .card-favourite i {
     color: #fff;
     padding-left: .3rem;
 }
-.famous-place .card-sale-off{
+.grid .card-top{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 55px;
+    height: 45px;
+    background-color: rgba(255, 216, 64, .95);
+}
+.grid .card-top .top-label{
+    color: red;
+    font-weight: 1000;
+    position: relative;
+    left: 6px;
+    top: 5px;
+    font-size: 1.5rem;
+}
+.grid .card-top::after{
+    content: "";
+    position: absolute;
+    right:  0;
+    bottom: -10px;
+    border-style: solid;
+    border-width: 0 27.5px 10px;
+    border-color: transparent rgba(255, 216, 64, .95) transparent rgba(255, 216, 64, .95);
+}
+.grid .card-sale-off{
     position: absolute;
     right: 0;
     top: 0;
@@ -194,28 +248,28 @@
     background-color: rgba(255, 216, 64, .95);
 
 }
-.famous-place .card-sale-off .discount{
+.grid .card-sale-off .discount{
     color: red;
     font-weight: 1000;
     font-size: 1.3rem;
 
 }
-.famous-place .card-sale-off .discount-label{
+.grid .card-sale-off .discount-label{
     color: #fff;
     font-weight: 1000;
     position: relative;
     left: 7px;
 }
-.famous-place .card-sale-off::after{
+.grid .card-sale-off::after{
     content: "";
     position: absolute;
     left: 0;
     bottom: -10px;
-    border-width: 0 27.5px 10px;
     border-style: solid;
+    border-width: 0 27.5px 10px;
     border-color: transparent rgba(255, 216, 64, .95) transparent rgba(255, 216, 64, .95);
 }
-@media screen and (max-width: 991px){
+@media screen and (max-width: 1046px){
     .home{
         flex-flow: column;
         padding: 1.5rem;
@@ -231,14 +285,25 @@
         padding: 0;
         border: none;
     }
+    .grid{
+        height: 100%;
+    }
+    .grid .card-container {
+        flex-wrap: wrap;
+    }
+    .grid .card-container .card{
+        max-width: 40%;
+    }
 } 
 @media screen and (max-width: 500px){
     .home .form-container form{
         width: 100%;
         margin: 3rem 0;
-
     }
     .home .form-container form input[type="submit"]{
         width: 100%;
+    }
+    .grid .card-container .card{
+        max-width: 70%;
     }
 } 
