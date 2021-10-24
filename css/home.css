@@ -81,11 +81,11 @@
 
 
 
-.introduction{
+.famous-place{
     height: 100vh;
     background: #f9f9f9;
 }
-.heading{
+.famous-place .heading{
     color:var(--main-color);
     font-size: 2rem;
     padding: 1rem;
@@ -93,14 +93,14 @@
     text-align: center;
     letter-spacing: .2rem;
 }
-.introduction .card-container{
+.famous-place .card-container{
     display: flex;
     align-items: center;
     justify-content:center;
     flex-wrap: nowrap;
     width: 100%;
 }
-.introduction .card-container .card{
+.famous-place .card-container .card{
     max-width: 16.6%;
     margin: 1rem;
     background: #fff;
@@ -108,37 +108,37 @@
     box-shadow: 0 .3rem 5rem rgba(0,0,0,.3);
     position: relative;
 }
-.introduction .card-container .card .slide-show{
+.famous-place .card-container .card .slide-show{
     display: flex;
     position: relative;
     overflow: hidden;
 }
-.introduction .card-container .card img{
+.famous-place .card-container .card img{
     width: 100%;
     height: 300px;
     object-fit: cover;
 }
-.introduction .card-container .content{
+.famous-place .card-container .content{
     padding-bottom: 1rem;
     text-align: center;
 }
-.introduction .card-container .content .title{
+.famous-place .card-container .content .title{
     color: var(--main-color);
     font-size: 1.5rem;
 
 }
-.introduction .card-container .content .p{
+.famous-place .card-container .content .p{
     color: #333;
     font-size: 1.3rem;
     padding: 1rem;
     overflow: auto;
 }
-.introduction .card-container .content .stars i{
+.famous-place .card-container .content .stars i{
     padding: 0 .2rem;
     font-size: 1.3rem;
     color: gold;
 }
-.introduction .card-container .content .btn{
+.famous-place .card-container .content .btn{
     font-size: 1.3rem;
     margin-top: 1rem;
     height: 2.5rem;
@@ -151,12 +151,12 @@
     cursor: pointer;
     transition: .2s linear;
 }
-.introduction .card-container .content .btn:hover{
+.famous-place .card-container .content .btn:hover{
     background: none;
     border: .2rem solid var(--main-color);
     color: var(--main-color);
 }
-.card-favourite{
+.famous-place .card-favourite{
     position: absolute;
     top: 10px;
     left: -13px;
@@ -169,7 +169,7 @@
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-.card-favourite::after{
+.famous-place .card-favourite::after{
     content: "";
     position: absolute;
     border-top: 9px solid currentColor;
@@ -178,14 +178,14 @@
     bottom: -9px;
     filter: brightness(50%);
 }
-.card-favourite span {
+.famous-place .card-favourite span {
     color: #fff;
 }
-.card-favourite i {
+.famous-place .card-favourite i {
     color: #fff;
     padding-left: .3rem;
 }
-.card-sale-off{
+.famous-place .card-sale-off{
     position: absolute;
     right: 0;
     top: 0;
@@ -194,19 +194,19 @@
     background-color: rgba(255, 216, 64, .95);
 
 }
-.card-sale-off .discount{
+.famous-place .card-sale-off .discount{
     color: red;
     font-weight: 1000;
     font-size: 1.3rem;
 
 }
-.card-sale-off .discount-label{
+.famous-place .card-sale-off .discount-label{
     color: #fff;
     font-weight: 1000;
     position: relative;
     left: 7px;
 }
-.card-sale-off::after{
+.famous-place .card-sale-off::after{
     content: "";
     position: absolute;
     left: 0;
