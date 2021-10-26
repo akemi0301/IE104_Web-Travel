@@ -39,9 +39,9 @@ $(document).ready(function(){
     $(function() {
         $('.place-card-5 .slide-show img:gt(0)').hide();
         setInterval(function(){
-          $('.card-5 .slide-show :first-child').fadeOut()
+          $('.place-card-5 .slide-show :first-child').fadeOut()
           .next('img').fadeIn() 
-          .end().appendTo('.card-5 .slide-show'); 
+          .end().appendTo('.place-card-5 .slide-show'); 
           }, 3000);
     })
 

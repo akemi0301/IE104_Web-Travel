@@ -12,7 +12,7 @@
     <script src="js/home.js"></script>
     <script> 
         $(function(){
-            $("#includedContent").load("header.html"); 
+            $(".header").load("header.html"); 
         });
     </script>
 
@@ -21,7 +21,7 @@
 
     <main>
 
-    <div id="includedContent"></div>
+    <div class="header"></div>
     <section class="home" id="home">
             
         <div class="video">
@@ -438,5 +438,11 @@
 
    
 </main>
+<div id="footer"></div>    
+    <script> 
+        $(function(){
+            $("#footer").load("footer.html"); 
+        });
+    </script> 
 </body>
 </html>
