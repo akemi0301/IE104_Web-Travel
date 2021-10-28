@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+:root {
+  --main-color: #0098a1;
+  --bg-color: #333;
+  --text-color: #ededed;
+}
+
+.hero {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(banner.jpg);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+
+.form-box {
+  width: 24rem;
+  height: 29rem;
+  position: relative;
+  margin: 6% auto;
+  background: #fff;
+  padding: 0.5rem;
+  overflow: hidden;
+}
+
+.button-box {
+  width: 14rem;
+  margin: 1.5rem auto;
+  position: relative;
+  box-shadow: 0 0 1.3rem 0.6rem #37b1c71f;
+  border-radius: 1.5rem;
+}
+
+.toggle-btn {
+  padding: 0.5em 1.3rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+  border: 0;
+  position: relative;
+}
+
+#btn {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 7rem;
+  height: 100%;
+  background: linear-gradient(to right, #0098a1, #ffad06);
+  border-radius: 1.7rem;
+  transition: 0.5s;
+}
+
+.hero .social-icons {
+  margin: 0.5rem auto;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.hero .social-icons a {
+  padding: 0.3rem;
+  margin: 0.3rem;
+  color: #0098a1;
+  cursor: pointer;
+}
+
+.input-group {
+  top: 9rem;
+  position: absolute;
+  width: 18rem;
+  transition: 0.5s;
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.7rem 0;
+  margin: 0.4rem 0;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid #999;
+  outline: none;
+  background: transparent;
+}
+
+.submit-btn {
+  width: 85%;
+  padding: 0.6rem 1.8rem;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  background: linear-gradient(to right, #0098a1, #ffad06);
+  border: 0;
+  outline: none;
+  border-radius: 2.2rem;
+}
+
+.check-box {
+  margin: 1.8rem 0.6rem 1.8rem 0;
+}
+
+span {
+  color: #777;
+  font-size: 0.8rem;
+  bottom: 3.95rem;
+  position: absolute;
+}
+
+#login {
+  left: 3rem;
+}
+
+#register {
+  left: 33rem;
+}
