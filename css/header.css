@@ -132,7 +132,6 @@ header .fa-bars{
 
 
 @media screen and (max-width: 1279px){
-    
     header .search-bar{
         width: 80%;
         text-align: left;
@@ -162,7 +161,6 @@ header .fa-bars{
         transition: .2s linear;
         opacity: 0;
     }
-
     header .navbar ul{
         flex-flow: column;
         padding-left: 0;
@@ -186,7 +184,6 @@ header .fa-bars{
     }
 }
 @media screen and (max-width: 978px){
-    
     header .search-bar{
         width: 70%;
         text-align: left;
