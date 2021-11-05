@@ -52,6 +52,7 @@ $(document).ready(function(){
         .end().appendTo('.place-card-6 .slide-show'); 
         }, 3000);
     })
+
     $(function() {
       $('.place-card-7 .slide-show img:gt(0)').hide();
       setInterval(function(){
@@ -60,6 +61,7 @@ $(document).ready(function(){
         .end().appendTo('.place-card-7 .slide-show'); 
         }, 3000);
     })
+
     $(function() {
       $('.place-card-8 .slide-show img:gt(0)').hide();
       setInterval(function(){
@@ -68,6 +70,7 @@ $(document).ready(function(){
         .end().appendTo('.place-card-8 .slide-show'); 
         }, 3000);
     })
+
     $(function() {
       $('.place-card-9 .slide-show img:gt(0)').hide();
       setInterval(function(){
@@ -76,6 +79,7 @@ $(document).ready(function(){
         .end().appendTo('.place-card-9 .slide-show'); 
         }, 3000);
     })
+    
     $(function() {
       $('.place-card-10 .slide-show img:gt(0)').hide();
       setInterval(function(){
