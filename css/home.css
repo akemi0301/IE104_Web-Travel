@@ -112,7 +112,6 @@
     position: relative;
     transition: transform linear .2s;
 }
-
 .slick-prev, .slick-next {
     border: none;
     width: 150px;
@@ -275,6 +274,9 @@
     border-width: 0 27.5px 10px;
     border-color: transparent rgba(255, 216, 64, .95) transparent rgba(255, 216, 64, .95);
 }
+
+
+
 @media screen and (max-width: 1046px){
     .home{
         flex-flow: column;

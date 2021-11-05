@@ -11,11 +11,9 @@ html{
     overflow-x: hidden;
     font-size: 100%;
 }
-
 :root {
     --main-color: #0098a1;
 }
-
 body{
     background: #333;
     height: 100%;
@@ -50,7 +48,6 @@ header .logo img{
     width: 7rem;
     margin-left: .5rem;
 }
-
 header .search-bar{
     width: 12rem;
     background-color: #EDEDED;
@@ -66,7 +63,6 @@ header .search-bar{
     margin:  .5rem 2rem .5rem 8rem;
     position: absolute;
 }
-
 header .search-icons{
     border: none;
     background-color: #EDEDED;
