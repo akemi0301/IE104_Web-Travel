@@ -93,8 +93,8 @@ $(document).ready(function(){
       isFinite: true,
       slidesToShow: 5,
       slidesToScroll: 5,
-      prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fas fa-angle-left' aria-hidden='true'></i></button>",
-      nextArrow:"<button type='button' class='slick-next pull-right'><i class='fas fa-angle-right' aria-hidden='true'></i></button>",
+      prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fas fa-chevron-circle-left' aria-hidden='true'></i></button>",
+      nextArrow:"<button type='button' class='slick-next pull-right'><i class='fas fa-chevron-circle-right' aria-hidden='true'></i></button>",
       responsive: [
         {
           breakpoint: 1276,

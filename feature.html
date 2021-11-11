@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khám Phá</title>
+    <link rel="stylesheet" href="css/feature.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/home.js"></script>
+    <script> 
+        $(function(){
+            $(".header").load("header.html"); 
+        });
+    </script>
+</head>
+<body>
+    <div class="header"></div>
+    <main>
+        <section class="feature">
+            <div class="video">
+                <video src="images/feature.mp4" loop muted autoplay></video>
+            </div>
+
+            <div class="content">
+                <h1>Khám Phá và Trải nghiệm <br>nhiều hơn cùng với <br>Odinal Banwol</h1>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="list">
+                <div class="list row">
+                    <div class="list column-2">
+                        <nav class="category">
+                            <h3 class="heading">
+                                <i class="fas fa-list"></i>
+                                Danh Mục
+                            </h3>
+                            <ul class="category-item">
+                                <!-- <span><i class="fas fa-caret-right"></i></span> -->
+                                <li class="category-item-active"><a href="#" class="category-item-link">Điểm Đến</a></li>
+                                <li><a href="#" class="category-item-link">Tour Tham Quan</a></li>
+                                <li><a href="#" class="category-item-link">Tour Du Thuyền</a></li>
+                                <li><a href="#" class="category-item-link">Tour Khám Phá</a></li>
+                                <li><a href="#" class="category-item-link">Tour Thám Hiểm</a></li>
+                                <li><a href="#" class="category-item-link">Tour Hot</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="list column-10">
+                        <div class="feature-filter">
+                            <span class="feature-filer__label">Sắp xếp theo</span>
+                            <button class="btn"><span>Phổ biến</span></button>
+                            <button class="btn"><span>Bán Chạy</span></button>
+                            <button class="btn"><span>Mới Nhất</span></button>
+                            <!-- <span>Giá</span> -->
+                            <select placeholder="Giá">
+                                <option value="0">Giá:</option>
+                                <a href="#"><option value="1">Giá thấp đến cao</option></a>
+                                <a href="#"><option value="1">Giá cao đến thấp</option></a>
+                            </select>
+
+                            <div class="feature-filter-page">
+                                <span class="page-num">
+                                    <span class="page-current">1</span>/10</span>
+                                <div class="page-control">
+                                    <a href="#" class="page-control-btn page-control-btn-disable">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </a>
+                                    <a href="#" class="page-control-btn">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="list grow">
+                            <div class="list column-2-5">
+                                <div class="card tour">
+                                    <div class="card tour-item" 
+                                         style="background-image: url(https://res.klook.com/image/upload/c_fill,w_1160,h_460,f_auto/w_80,x_15,y_15,g_south_west,l_klook_water/activities/at1ndmew0ujxeisvoiyh.webp)"></div>
+                                    <h3 class="tour-item-name">Tour Bà Nà Hill Đà Nẵng</h3>
+                                    <div class="tour-item-price">
+                                        <span class="tour-item-price-old">345.000đ</span>
+                                        <span class="tour-item-price-current">300.00đ</span>
+                                    </div>
+                                    <div class="tour-item-action">
+                                        <span class="tour-item-action-like">
+                                            <i class="far fa-heart"></i>
+                                            <!-- <i class="fas fa-heart"></i> -->
+                                        </span>
+
+                                        <div class="tour-item-action-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="tour-item-detail">
+                                        <span class="tour-item-type">Tour tham quan</span>
+                                        <span class="tour-item-place">Đà Nẵng</span>
+                                    </div>
+
+                                    <div class="card-favourite">
+                                        <i class="fas fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                            
+                                    <div class="card-sale-off">
+                                        <span class="discount">-35%</span>
+                                        <span class="discount-label">GIẢM</span>
+                                    </div>
+                                    
+                                </div>
+
+                                
+
+                                
+                            </div>
+                        </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+    <script src="js/feature.js"></script>
+</html>
