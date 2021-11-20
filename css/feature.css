@@ -1,4 +1,3 @@
-
 .feature{
     min-height: 500px;
     display: flex;
@@ -50,12 +49,13 @@
     flex-wrap: wrap;
 }
 .list .column-2{
-    width: 16.667%;
+    width: 19.5%;
+    display: inline-block;
 }
 .list .column-2 .category{
     background: #eee;
     border-radius: 5px;
-    padding: .3rem;
+    padding: 1rem;
 }
 .list .column-2 .category-item{
     list-style: none;
@@ -87,7 +87,8 @@
 .list .column-10{
     padding-left: 12px;
     padding-right: 12px;
-    width: 83.334%;
+    width: 80.5%;
+    height: 100%;
 }
 .list .column-10 .feature-filter{
     display: flex;
@@ -96,6 +97,7 @@
     padding: .7rem .7rem;
     border-radius: 5px;
     background: #eee;
+    
 }
 .list .column-10 .feature-filter .feature-filer__label{
     font-size: 1.2rem;
@@ -108,6 +110,9 @@
     background: #fff;
     border: none;
     border-radius: 6px;
+}
+.list .column-10 .feature-filter .btn-active{
+    color: var(--main-color);
 }
 .list .column-10 .feature-filter .btn span{
     font-size: 1rem;
@@ -163,6 +168,189 @@
     color: #ccc;
     cursor: default;
 }
-.list .column-2-5{
-    width: 20%;
+.list .column-2 .card {
+    padding-top: 100%;
+    padding: 0 -5px;
+    background: no-repeat 100% 0;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.list .column-2 .item-name{
+    margin: 5px;
+    color: var(--main-color);
+    font-size: 1.4rem;
+    margin-top: .5rem;
+    line-height: 1.75rem;
+    text-align: center;
+    height: 3.5rem;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    /* text-overflow: ellipsis;
+    white-space: nowrap; */
+}
+.list .column-2 .item-price{
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin: .2rem;
+}
+.list .column-2 .item-price-old{
+    margin-left: 5px;
+    font-size: 1rem;
+    color: #666;
+    text-decoration: line-through;
+}
+.list .column-2 .item-price-current{
+    margin-left: 5px;
+    font-size: 1.2rem;
+    color: red;
+}
+.list .column-2 .item-action{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 5px;
+    align-items: baseline;
+}
+.list .column-2 .item-action-rating{
+    flex: 1;
+    display: flex;
+}
+.list .column-2 .item-action-rating .fas{
+    font-size: 1.5rem;
+    color: gold;
+}
+.list .column-2 .item-action-rating span{
+    font-size: 1.4rem;
+}
+.list .column-2 .item-action-like .far{
+    font-size: 1.5rem;
+    color: red;
+}
+.list .column-2 .item-action-like .fas{
+    display: none;
+    color: red;
+}
+/* .list .column-2 .status-liked .fas{
+    display: inline-block;
+} */
+.list .column-2 .item-action-addcart .fas{
+    font-size: 1.5rem;
+    color: green;
+}
+.list .column-2 .item-action-addcart{
+    margin-left: 5px;
+}
+.list .column-2 .item-detail-type{
+    margin: 0 5px;
+    font-size: 1rem;
+    color: #fff;
+    position: absolute;
+    bottom: 1.4rem;
+}
+.list .column-2 .item-detail-type .fas{
+    color: yellow;
+    font-size: 1rem;
+}
+.list .column-2 .item-detail-place{
+    margin: 0 8px;
+    font-size: 1rem;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+}
+.list .column-2 .item-detail-place .fas{
+    color: yellow;
+    font-size: 1rem;
+}
+.list .column-2 .card-container{
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.list .column-2 .card-container .label-favourite{
+    position: absolute;
+    top: 0;
+    left: -10px;
+    color: red;
+    background-color: currentColor;
+    font-size: 1.2rem;
+    align-items: baseline;
+    margin-left: 2px;
+    line-height: 1.6rem;
+    padding-right: 5px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.list .column-2 .card-container .label-favourite .fas,
+.list .column-2 .card-container .label-favourite span{
+    color: white;
+}
+.list .column-2 .card-container .label-favourite::after{
+    content: "";
+    position: absolute;
+    border-top: 8px solid currentColor;
+    border-left: 8px solid transparent;
+    left: 0;
+    bottom: -8px;
+    filter: brightness(50%);
+}
+.column-2 .label-sale-off{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 216, 64, .95);
+}
+.list .column-2 .card-container .label-sale-off .discount{
+    color: red;
+    font-weight: 1000;
+    font-size: 1.2rem;
+
+}
+.list .column-2 .label-sale-off .discount-label{
+    color: #fff;
+    font-weight: 600;
+    font-size: .9rem;
+    position: relative;
+    left: 6px;
+}
+.list .column-2 .label-sale-off::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    border-style: solid;
+    border-width: 0 25px 8px;
+    border-color: transparent rgba(255, 216, 64, .95) transparent rgba(255, 216, 64, .95);
+}
+.list .column-10 .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.list .column-10 .pagination a {
+    color: black;
+    float: right;
+    font-size: 1.3rem;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+.list .column-10 .pagination a .fas{
+    color: black;
+    font-size: 1rem;
+}
+.list .column-10 .pagination a.active {
+    background-color:  var(--main-color);
+    color: white;
+}
+.list .column-10 .pagination a .fas:hover,
+.list .column-10 .pagination a:hover:not(.active) {
+    background-color: #666;
+    color: white;
 }
