@@ -56,7 +56,7 @@ renderProducts = (hotel) => {
                     </div>
                     <div class="product-card-info">
                         <div class="product-btn">
-                            <a href="./product-room.html" class="btn-flat btn-hover btn-shop-now">Xem ngay</a>
+                            <a href="./hotel-room.html" class="btn-flat btn-hover btn-shop-now">Xem ngay</a>
                             <button class="btn-flat btn-hover btn-cart-add">
                                 <i class='bx bxs-cart-add'></i>
                             </button>
