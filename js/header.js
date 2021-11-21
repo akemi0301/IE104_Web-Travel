@@ -15,5 +15,10 @@ $(document).ready(function(){
             $('header').removeClass('header-active');
         }
     });
+
+    $('.nav-item').click(function(){
+        $('nar-item').removeClass('active');
+        this.addClass('active');
+    });
     
 });

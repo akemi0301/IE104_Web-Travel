@@ -9,11 +9,6 @@
     <link rel="stylesheet" href="css/feature.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/home.js"></script>
-    <script> 
-        $(function(){
-            $(".header").load("header.html"); 
-        });
-    </script>
 </head>
 <body>
     <div class="header"></div>
@@ -32,7 +27,7 @@
         <section class="container">
             <div class="list">
                 <div class="list row">
-                    <div class="list column-2">
+                    <div class="list column-2 select-bar">
                         <nav class="category">
                             <h3 class="heading">
                                 <i class="fas fa-list"></i>
@@ -41,11 +36,14 @@
                             <ul class="category-item">
                                 <!-- <span><i class="fas fa-caret-right"></i></span> -->
                                 <li class="category-item-active"><a href="#" class="category-item-link">Điểm Đến</a></li>
-                                <li><a href="#" class="category-item-link">Tour Tham Quan</a></li>
-                                <li><a href="#" class="category-item-link">Tour Du Thuyền</a></li>
-                                <li><a href="#" class="category-item-link">Tour Khám Phá</a></li>
-                                <li><a href="#" class="category-item-link">Tour Thám Hiểm</a></li>
-                                <li><a href="#" class="category-item-link">Tour Hot</a></li>
+                                <li><a href="#" class="category-item-link">Du Lịch Tham Quan</a></li>
+                                <li><a href="#" class="category-item-link">Du Lịch Khám Phá</a></li>
+                                <li><a href="#" class="category-item-link">Du Lịch Thám Hiểm</a></li>
+                                <li><a href="#" class="category-item-link">Du Lịch Du Ngoạn</a></li>
+                                <li><a href="#" class="category-item-link">Du Lịch Sinh Thái</a></li>
+                                <li><a href="#" class="category-item-link">Du Lịch Xanh</a></li>
+                                <li><a href="#" class="category-item-link">Du Lịch Văn Hóa</a></li>
+                                <!-- <li><a href="#" class="category-item-link">Review Du Lịch</a></li> -->
                             </ul>
                         </nav>
                     </div>
@@ -53,9 +51,9 @@
                     <div class="list column-10">
                         <div class="feature-filter">
                             <span class="feature-filer__label">Sắp xếp theo</span>
-                            <button class="btn btn-active"><span>Phổ biến</span></button>
-                            <button class="btn"><span>Bán Chạy</span></button>
-                            <button class="btn"><span>Mới Nhất</span></button>
+                            <button class="btn btn-active">Phổ biến</button>
+                            <button class="btn">Bán Chạy</button>
+                            <button class="btn">Hot Nhất</button>
                             
                             <select placeholder="Giá">
                                 <option value="0">Giá:</option>
@@ -82,7 +80,7 @@
                                 <div class="card-container 1">
                                     <a href=""> 
                                         <div class="card tour item-img" 
-                                            style="background-image: url('images/tour/danang-banahill.jpg')">
+                                            style="background-image: url('images/tour/tour-tham-quan-banahill-da-nang.jpg')">
                                         
                                             <div class="tour item-detail-type">
                                                 <i class="fas fa-tags"></i>
@@ -94,7 +92,7 @@
                                             </div>
 
                                         </div>
-                                        <h3 class="tour item-name">Tour Bà Nà Hill 1 Ngày 2 Đêm</h3>
+                                        <h3 class="tour item-name">Tour Du Lịch Bà Nà Hill 1 Ngày 2 Đêm</h3>
 
                                         <div class="tour item-price">
                                             <span class="tour item-price-old">345.000đ</span>
@@ -104,7 +102,7 @@
                                         <div class="tour item-action">
                                             <div class="tour item-action-rating">
                                                 <i class="fas fa-star"></i>
-                                                <span>4.7</span>
+                                                <span>4.7 | 12K+ </span>
                                             </div>
 
                                             <div class="tour item-action-like status-liked">
@@ -147,17 +145,17 @@
                                             </div>
                                             
                                         </div>
-                                        <h3 class="tour item-name">Tour Sài Gòn 2 Ngày 1 Đêm</h3>
+                                        <h3 class="tour item-name">Tour Du Lịch Sài Gòn 2 Ngày 1 Đêm</h3>
 
                                         <div class="tour item-price">
-                                            <span class="tour item-price-old">345.000đ</span>
-                                            <span class="tour item-price-current">213.000đ</span>
+                                            <span class="tour item-price-old">255.000đ</span>
+                                            <span class="tour item-price-current">217.000đ</span>
                                         </div>
                                         
                                         <div class="tour item-action">
                                             <div class="tour item-action-rating">
                                                 <i class="fas fa-star"></i>
-                                                <span>4.7</span>
+                                                <span>4.5 | 32K+ </span>
                                             </div>
 
                                             <div class="tour item-action-like status-liked">
@@ -177,7 +175,7 @@
                                     </div>
                             
                                     <div class="label-sale-off">
-                                        <span class="discount">-35%</span>
+                                        <span class="discount">-15%</span>
                                         <span class="discount-label">GIẢM</span>
                                     </div>
                                     </a>
@@ -188,7 +186,7 @@
                                 <div class="card-container 3">
                                     <a href=""> 
                                         <div class="card tour item-img" 
-                                            style="background-image: url('images/tour/du-lich-sapa-fansipan.jpg')">
+                                            style="background-image: url('images/tour/tour-tham-quan-sa-pa.jpg')">
                                         
                                             <div class="tour item-detail-type">
                                                 <i class="fas fa-tags"></i>
@@ -196,21 +194,21 @@
                                             </div>
                                             <div class="tour item-detail-place">
                                                 <i class="fas fa-map-marker-alt"></i>
-                                                <span>Sa Pa</span> 
+                                                <span>Lào Cai</span> 
                                             </div>
                                             
                                         </div>
-                                        <h3 class="tour item-name">Tour Sa Pa 2 Ngày 1 Đêm</h3>
+                                        <h3 class="tour item-name">Tour Du Lịch Sa Pa 2 Ngày 1 Đêm</h3>
 
                                         <div class="tour item-price">
-                                            <span class="tour item-price-old">345.000đ</span>
-                                            <span class="tour item-price-current">213.000đ</span>
+                                            <span class="tour item-price-old">350.000đ</span>
+                                            <span class="tour item-price-current">263.000đ</span>
                                         </div>
                                         
                                         <div class="tour item-action">
                                             <div class="tour item-action-rating">
                                                 <i class="fas fa-star"></i>
-                                                <span>4.7</span>
+                                                <span>4.8 | 42K+ </span>
                                             </div>
 
                                             <div class="tour item-action-like status-liked">
@@ -230,7 +228,7 @@
                                     </div>
                             
                                     <div class="label-sale-off">
-                                        <span class="discount">-35%</span>
+                                        <span class="discount">-25%</span>
                                         <span class="discount-label">GIẢM</span>
                                     </div>
                                     </a>
@@ -241,7 +239,7 @@
                                 <div class="card-container 4">
                                     <a href=""> 
                                         <div class="card tour item-img" 
-                                            style="background-image: url('images/tour/tour-moc-chau.jpg')">
+                                            style="background-image: url('images/tour/tour-tham-quan-moc-chau.jpg')">
                                         
                                             <div class="tour item-detail-type">
                                                 <i class="fas fa-tags"></i>
@@ -253,17 +251,17 @@
                                             </div>
                                             
                                         </div>
-                                        <h3 class="tour item-name">Tour Mộc Châu 1 Ngày 2 Đêm<h3>
+                                        <h3 class="tour item-name">Tour Du Lịch Mộc Châu 2 Ngày 1 Đêm</h3>
 
                                         <div class="tour item-price">
-                                            <span class="tour item-price-old">345.000đ</span>
-                                            <span class="tour item-price-current">213.000đ</span>
+                                            <span class="tour item-price-old">355.000đ</span>
+                                            <span class="tour item-price-current">230.000đ</span>
                                         </div>
                                         
                                         <div class="tour item-action">
                                             <div class="tour item-action-rating">
                                                 <i class="fas fa-star"></i>
-                                                <span>4.7</span>
+                                                <span>4.6 | 45K+ </span>
                                             </div>
 
                                             <div class="tour item-action-like status-liked">
@@ -288,13 +286,13 @@
                                     </div>
                                     </a>
                                 </div>
-                            </div> 
-
+                            </div>
+                            
                             <div class="list column-2">
                                 <div class="card-container 5">
                                     <a href=""> 
                                         <div class="card tour item-img" 
-                                            style="background-image: url('images/tour/tour-du-lich-ninh-binh.jpg')">
+                                            style="background-image: url('images/tour/tour-tham-quan-ninh-binh.jpg')">
                                         
                                             <div class="tour item-detail-type">
                                                 <i class="fas fa-tags"></i>
@@ -306,17 +304,17 @@
                                             </div>
                                             
                                         </div>
-                                        <h3 class="tour item-name">Tour Ninh Bình 1 Ngày 2 Đêm<h3>
+                                        <h3 class="tour item-name">Tour Du Lịch Ninh Bình 2 Ngày 3 Đêm</h3>
 
                                         <div class="tour item-price">
-                                            <span class="tour item-price-old">345.000đ</span>
-                                            <span class="tour item-price-current">213.000đ</span>
+                                            <span class="tour item-price-old">355.000đ</span>
+                                            <span class="tour item-price-current">337.000đ</span>
                                         </div>
                                         
                                         <div class="tour item-action">
                                             <div class="tour item-action-rating">
                                                 <i class="fas fa-star"></i>
-                                                <span>4.7</span>
+                                                <span>4.6 | 28K+ </span>
                                             </div>
 
                                             <div class="tour item-action-like status-liked">
@@ -336,60 +334,7 @@
                                     </div>
                             
                                     <div class="label-sale-off">
-                                        <span class="discount">-35%</span>
-                                        <span class="discount-label">GIẢM</span>
-                                    </div>
-                                    </a>
-                                </div>
-                            </div>    
-                            
-                            <div class="list column-2">
-                                <div class="card-container 1">
-                                    <a href=""> 
-                                        <div class="card tour item-img" 
-                                            style="background-image: url('images/tour/danang-banahill.jpg')">
-                                        
-                                            <div class="tour item-detail-type">
-                                                <i class="fas fa-tags"></i>
-                                                <span>Tour tham quan</span>
-                                            </div>
-                                            <div class="tour item-detail-place">
-                                                <i class="fas fa-map-marker-alt"></i>
-                                                <span>Đà Nẵng</span> 
-                                            </div>
-
-                                        </div>
-                                        <h3 class="tour item-name">Tour Bà Nà Hill 1 Ngày 2 Đêm</h3>
-
-                                        <div class="tour item-price">
-                                            <span class="tour item-price-old">345.000đ</span>
-                                            <span class="tour item-price-current">213.000đ</span>
-                                        </div>
-                                        
-                                        <div class="tour item-action">
-                                            <div class="tour item-action-rating">
-                                                <i class="fas fa-star"></i>
-                                                <span>4.7</span>
-                                            </div>
-
-                                            <div class="tour item-action-like status-liked">
-                                                <i class="icon-like far fa-heart"></i>
-                                                <i class="icon-liked fas fa-heart"></i>
-                                            </div>
-
-                                            <div class="tour item-action-addcart">
-                                                <i class="fas fa-cart-plus"></i>
-                                            </div>
-
-                                        </div>
-
-                                    <div class="label-favourite">
-                                        <i class="fas fa-check"></i>
-                                        <span>Yêu thích</span>
-                                    </div>
-                            
-                                    <div class="label-sale-off">
-                                        <span class="discount">-35%</span>
+                                        <span class="discount">-15%</span>
                                         <span class="discount-label">GIẢM</span>
                                     </div>
                                     </a>
@@ -397,10 +342,10 @@
                             </div>
 
                             <div class="list column-2">
-                                <div class="card-container 2">
+                                <div class="card-container 6">
                                     <a href=""> 
                                         <div class="card tour item-img" 
-                                            style="background-image: url('images/tour/tour-tham-quan-sai-gon.jpg')">
+                                            style="background-image: url('images/tour/tour-tham-quan-3-dao-phu-quoc-1-ngay.jpg')">
                                         
                                             <div class="tour item-detail-type">
                                                 <i class="fas fa-tags"></i>
@@ -408,21 +353,21 @@
                                             </div>
                                             <div class="tour item-detail-place">
                                                 <i class="fas fa-map-marker-alt"></i>
-                                                <span>Sài Gòn</span> 
+                                                <span>Kiên Giang</span> 
                                             </div>
                                             
                                         </div>
-                                        <h3 class="tour item-name">Tour Sài Gòn 2 Ngày 1 Đêm</h3>
+                                        <h3 class="tour item-name">Tour 3 Đảo Phú Quốc Trong 1 Ngày</h3>
 
                                         <div class="tour item-price">
-                                            <span class="tour item-price-old">345.000đ</span>
-                                            <span class="tour item-price-current">213.000đ</span>
+                                            <span class="tour item-price-old">350.000đ</span>
+                                            <span class="tour item-price-current">263.000đ</span>
                                         </div>
                                         
                                         <div class="tour item-action">
                                             <div class="tour item-action-rating">
                                                 <i class="fas fa-star"></i>
-                                                <span>4.7</span>
+                                                <span>4.8 | 42K+ </span>
                                             </div>
 
                                             <div class="tour item-action-like status-liked">
@@ -442,7 +387,7 @@
                                     </div>
                             
                                     <div class="label-sale-off">
-                                        <span class="discount">-35%</span>
+                                        <span class="discount">-25%</span>
                                         <span class="discount-label">GIẢM</span>
                                     </div>
                                     </a>
@@ -450,116 +395,10 @@
                             </div>
 
                             <div class="list column-2">
-                                <div class="card-container 3">
+                                <div class="card-container 7">
                                     <a href=""> 
                                         <div class="card tour item-img" 
-                                            style="background-image: url('images/tour/du-lich-sapa-fansipan.jpg')">
-                                        
-                                            <div class="tour item-detail-type">
-                                                <i class="fas fa-tags"></i>
-                                                <span>Tour tham quan</span>
-                                            </div>
-                                            <div class="tour item-detail-place">
-                                                <i class="fas fa-map-marker-alt"></i>
-                                                <span>Sa Pa</span> 
-                                            </div>
-                                            
-                                        </div>
-                                        <h3 class="tour item-name">Tour Sa Pa 2 Ngày 1 Đêm</h3>
-
-                                        <div class="tour item-price">
-                                            <span class="tour item-price-old">345.000đ</span>
-                                            <span class="tour item-price-current">213.000đ</span>
-                                        </div>
-                                        
-                                        <div class="tour item-action">
-                                            <div class="tour item-action-rating">
-                                                <i class="fas fa-star"></i>
-                                                <span>4.7</span>
-                                            </div>
-
-                                            <div class="tour item-action-like status-liked">
-                                                <i class="icon-like far fa-heart"></i>
-                                                <i class="icon-liked fas fa-heart"></i>
-                                            </div>
-
-                                            <div class="tour item-action-addcart">
-                                                <i class="fas fa-cart-plus"></i>
-                                            </div>
-
-                                        </div>
-
-                                    <div class="label-favourite">
-                                        <i class="fas fa-check"></i>
-                                        <span>Yêu thích</span>
-                                    </div>
-                            
-                                    <div class="label-sale-off">
-                                        <span class="discount">-35%</span>
-                                        <span class="discount-label">GIẢM</span>
-                                    </div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="list column-2">
-                                <div class="card-container 4">
-                                    <a href=""> 
-                                        <div class="card tour item-img" 
-                                            style="background-image: url('images/tour/tour-moc-chau.jpg')">
-                                        
-                                            <div class="tour item-detail-type">
-                                                <i class="fas fa-tags"></i>
-                                                <span>Tour tham quan</span>
-                                            </div>
-                                            <div class="tour item-detail-place">
-                                                <i class="fas fa-map-marker-alt"></i>
-                                                <span>Sơn La</span> 
-                                            </div>
-                                            
-                                        </div>
-                                        <h3 class="tour item-name">Tour Mộc Châu 1 Ngày 2 Đêm<h3>
-
-                                        <div class="tour item-price">
-                                            <span class="tour item-price-old">345.000đ</span>
-                                            <span class="tour item-price-current">213.000đ</span>
-                                        </div>
-                                        
-                                        <div class="tour item-action">
-                                            <div class="tour item-action-rating">
-                                                <i class="fas fa-star"></i>
-                                                <span>4.7</span>
-                                            </div>
-
-                                            <div class="tour item-action-like status-liked">
-                                                <i class="icon-like far fa-heart"></i>
-                                                <i class="icon-liked fas fa-heart"></i>
-                                            </div>
-
-                                            <div class="tour item-action-addcart">
-                                                <i class="fas fa-cart-plus"></i>
-                                            </div>
-
-                                        </div>
-
-                                    <div class="label-favourite">
-                                        <i class="fas fa-check"></i>
-                                        <span>Yêu thích</span>
-                                    </div>
-                            
-                                    <div class="label-sale-off">
-                                        <span class="discount">-35%</span>
-                                        <span class="discount-label">GIẢM</span>
-                                    </div>
-                                    </a>
-                                </div>
-                            </div> 
-
-                            <div class="list column-2">
-                                <div class="card-container 5">
-                                    <a href=""> 
-                                        <div class="card tour item-img" 
-                                            style="background-image: url('images/tour/tour-du-lich-ninh-binh.jpg')">
+                                            style="background-image: url('images/tour/tour-tham-quan-bai-dinh-trang-an-1-ngay.jpg')">
                                         
                                             <div class="tour item-detail-type">
                                                 <i class="fas fa-tags"></i>
@@ -571,17 +410,17 @@
                                             </div>
                                             
                                         </div>
-                                        <h3 class="tour item-name">Tour Ninh Bình 1 Ngày 2 Đêm<h3>
+                                        <h3 class="tour item-name">Tour Bái Đình-Tràng An 1 Ngày</h3>
 
                                         <div class="tour item-price">
-                                            <span class="tour item-price-old">345.000đ</span>
-                                            <span class="tour item-price-current">213.000đ</span>
+                                            <span class="tour item-price-old">355.000đ</span>
+                                            <span class="tour item-price-current">230.000đ</span>
                                         </div>
                                         
                                         <div class="tour item-action">
                                             <div class="tour item-action-rating">
                                                 <i class="fas fa-star"></i>
-                                                <span>4.7</span>
+                                                <span>4.6 | 45K+ </span>
                                             </div>
 
                                             <div class="tour item-action-like status-liked">
@@ -606,19 +445,710 @@
                                     </div>
                                     </a>
                                 </div>
-                            </div> 
+                            </div>
+
+                            <div class="list column-2">
+                                <div class="card-container 8">
+                                    <a href=""> 
+                                        <div class="card tour item-img" 
+                                            style="background-image: url('images/tour/tour-tham-quan-eo-gio-binh-dinh.jpg')">
+                                        
+                                            <div class="tour item-detail-type">
+                                                <i class="fas fa-tags"></i>
+                                                <span>Tour tham quan</span>
+                                            </div>
+                                            <div class="tour item-detail-place">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                                <span>Bình Định</span> 
+                                            </div>
+
+                                        </div>
+                                        <h3 class="tour item-name">Tour Tham Quan Eo Gió 2 Ngày 1 Đêm</h3>
+
+                                        <div class="tour item-price">
+                                            <span class="tour item-price-old">345.000đ</span>
+                                            <span class="tour item-price-current">213.000đ</span>
+                                        </div>
+                                        
+                                        <div class="tour item-action">
+                                            <div class="tour item-action-rating">
+                                                <i class="fas fa-star"></i>
+                                                <span>4.7 | 12K+ </span>
+                                            </div>
+
+                                            <div class="tour item-action-like status-liked">
+                                                <i class="icon-like far fa-heart"></i>
+                                                <i class="icon-liked fas fa-heart"></i>
+                                            </div>
+
+                                            <div class="tour item-action-addcart">
+                                                <i class="fas fa-cart-plus"></i>
+                                            </div>
+
+                                        </div>
+
+                                    <div class="label-favourite">
+                                        <i class="fas fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                            
+                                    <div class="label-sale-off">
+                                        <span class="discount">-35%</span>
+                                        <span class="discount-label">GIẢM</span>
+                                    </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="list column-2">
+                                <div class="card-container 9">
+                                    <a href=""> 
+                                        <div class="card tour item-img" 
+                                            style="background-image: url('images/tour/tour-tham-quan-hang-rai-ninh-thuan.jpg')">
+                                        
+                                            <div class="tour item-detail-type">
+                                                <i class="fas fa-tags"></i>
+                                                <span>Tour tham quan</span>
+                                            </div>
+                                            <div class="tour item-detail-place">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                                <span>Ninh Thuận</span> 
+                                            </div>
+                                            
+                                        </div>
+                                        <h3 class="tour item-name">Tour Du Lịch Hang Rái 2 Ngày 1 Đêm</h3>
+
+                                        <div class="tour item-price">
+                                            <span class="tour item-price-old">350.000đ</span>
+                                            <span class="tour item-price-current">263.000đ</span>
+                                        </div>
+                                        
+                                        <div class="tour item-action">
+                                            <div class="tour item-action-rating">
+                                                <i class="fas fa-star"></i>
+                                                <span>4.8 | 42K+ </span>
+                                            </div>
+
+                                            <div class="tour item-action-like status-liked">
+                                                <i class="icon-like far fa-heart"></i>
+                                                <i class="icon-liked fas fa-heart"></i>
+                                            </div>
+
+                                            <div class="tour item-action-addcart">
+                                                <i class="fas fa-cart-plus"></i>
+                                            </div>
+
+                                        </div>
+
+                                    <div class="label-favourite">
+                                        <i class="fas fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                            
+                                    <div class="label-sale-off">
+                                        <span class="discount">-25%</span>
+                                        <span class="discount-label">GIẢM</span>
+                                    </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="list column-2">
+                                <div class="card-container 10">
+                                    <a href=""> 
+                                        <div class="card tour item-img" 
+                                            style="background-image: url('images/tour/tour-tham-quan-hue.jpg')">
+                                        
+                                            <div class="tour item-detail-type">
+                                                <i class="fas fa-tags"></i>
+                                                <span>Tour tham quan</span>
+                                            </div>
+                                            <div class="tour item-detail-place">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                                <span>Thừa Thiên Huế</span> 
+                                            </div>
+                                            
+                                        </div>
+                                        <h3 class="tour item-name">Tour Du Lịch Huế 2 Ngày 1 Đêm</h3>
+
+                                        <div class="tour item-price">
+                                            <span class="tour item-price-old">255.000đ</span>
+                                            <span class="tour item-price-current">217.000đ</span>
+                                        </div>
+                                        
+                                        <div class="tour item-action">
+                                            <div class="tour item-action-rating">
+                                                <i class="fas fa-star"></i>
+                                                <span>4.5 | 32K+ </span>
+                                            </div>
+
+                                            <div class="tour item-action-like status-liked">
+                                                <i class="icon-like far fa-heart"></i>
+                                                <i class="icon-liked fas fa-heart"></i>
+                                            </div>
+
+                                            <div class="tour item-action-addcart">
+                                                <i class="fas fa-cart-plus"></i>
+                                            </div>
+
+                                        </div>
+
+                                    <div class="label-favourite">
+                                        <i class="fas fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                            
+                                    <div class="label-sale-off">
+                                        <span class="discount">-15%</span>
+                                        <span class="discount-label">GIẢM</span>
+                                    </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="list column-2">
+                                <div class="card-container 11">
+                                    <a href=""> 
+                                        <div class="card tour item-img" 
+                                            style="background-image: url('images/tour/tour-tham-quan-phan-thiet.jpg')">
+                                        
+                                            <div class="tour item-detail-type">
+                                                <i class="fas fa-tags"></i>
+                                                <span>Tour tham quan</span>
+                                            </div>
+                                            <div class="tour item-detail-place">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                                <span>Phan Thiết</span> 
+                                            </div>
+                                            
+                                        </div>
+                                        <h3 class="tour item-name">Tour Du Lịch Mũi Né Phan Thiết 2 Ngày 1 Đêm</h3>
+
+                                        <div class="tour item-price">
+                                            <span class="tour item-price-old">255.000đ</span>
+                                            <span class="tour item-price-current">217.000đ</span>
+                                        </div>
+                                        
+                                        <div class="tour item-action">
+                                            <div class="tour item-action-rating">
+                                                <i class="fas fa-star"></i>
+                                                <span>4.5 | 32K+ </span>
+                                            </div>
+
+                                            <div class="tour item-action-like status-liked">
+                                                <i class="icon-like far fa-heart"></i>
+                                                <i class="icon-liked fas fa-heart"></i>
+                                            </div>
+
+                                            <div class="tour item-action-addcart">
+                                                <i class="fas fa-cart-plus"></i>
+                                            </div>
+
+                                        </div>
+
+                                    <div class="label-favourite">
+                                        <i class="fas fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                            
+                                    <div class="label-sale-off">
+                                        <span class="discount">-15%</span>
+                                        <span class="discount-label">GIẢM</span>
+                                    </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="list column-2">
+                                <div class="card-container 12">
+                                    <a href=""> 
+                                        <div class="card tour item-img" 
+                                            style="background-image: url('images/tour/tour-tham-quan-vinh-hy-vuon-nho-hang-rai-nha-trang.jpg')">
+                                        
+                                            <div class="tour item-detail-type">
+                                                <i class="fas fa-tags"></i>
+                                                <span>Tour tham quan</span>
+                                            </div>
+                                            <div class="tour item-detail-place">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                                <span>Nha Trang</span> 
+                                            </div>
+                                            
+                                        </div>
+                                        <h3 class="tour item-name">Tour Vĩnh Hy-Vườn Nho-Hàng Rái</h3>
+
+                                        <div class="tour item-price">
+                                            <span class="tour item-price-old">350.000đ</span>
+                                            <span class="tour item-price-current">263.000đ</span>
+                                        </div>
+                                        
+                                        <div class="tour item-action">
+                                            <div class="tour item-action-rating">
+                                                <i class="fas fa-star"></i>
+                                                <span>4.8 | 42K+ </span>
+                                            </div>
+
+                                            <div class="tour item-action-like status-liked">
+                                                <i class="icon-like far fa-heart"></i>
+                                                <i class="icon-liked fas fa-heart"></i>
+                                            </div>
+
+                                            <div class="tour item-action-addcart">
+                                                <i class="fas fa-cart-plus"></i>
+                                            </div>
+
+                                        </div>
+
+                                    <div class="label-favourite">
+                                        <i class="fas fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                            
+                                    <div class="label-sale-off">
+                                        <span class="discount">-25%</span>
+                                        <span class="discount-label">GIẢM</span>
+                                    </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="list column-2">
+                                <div class="card-container 13">
+                                    <a href=""> 
+                                        <div class="card tour item-img" 
+                                            style="background-image: url('images/tour/tour-tham-quan-an-giang.jpg')">
+                                        
+                                            <div class="tour item-detail-type">
+                                                <i class="fas fa-tags"></i>
+                                                <span>Tour tham quan</span>
+                                            </div>
+                                            <div class="tour item-detail-place">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                                <span>an Giang</span> 
+                                            </div>
+                                            
+                                        </div>
+                                        <h3 class="tour item-name">Tour du lịch an Giang 2 Ngày 1 Đêm</h3>
+
+                                        <div class="tour item-price">
+                                            <span class="tour item-price-old">355.000đ</span>
+                                            <span class="tour item-price-current">230.000đ</span>
+                                        </div>
+                                        
+                                        <div class="tour item-action">
+                                            <div class="tour item-action-rating">
+                                                <i class="fas fa-star"></i>
+                                                <span>4.6 | 45K+ </span>
+                                            </div>
+
+                                            <div class="tour item-action-like status-liked">
+                                                <i class="icon-like far fa-heart"></i>
+                                                <i class="icon-liked fas fa-heart"></i>
+                                            </div>
+
+                                            <div class="tour item-action-addcart">
+                                                <i class="fas fa-cart-plus"></i>
+                                            </div>
+
+                                        </div>
+
+                                    <div class="label-favourite">
+                                        <i class="fas fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                            
+                                    <div class="label-sale-off">
+                                        <span class="discount">-35%</span>
+                                        <span class="discount-label">GIẢM</span>
+                                    </div>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="list column-2">
+                                <div class="card-container 14">
+                                    <a href=""> 
+                                        <div class="card tour item-img" 
+                                            style="background-image: url('images/tour/tour-tham-quan-cau-tinh-yeu-can-tho.jpg')">
+                                        
+                                            <div class="tour item-detail-type">
+                                                <i class="fas fa-tags"></i>
+                                                <span>Tour tham quan</span>
+                                            </div>
+                                            <div class="tour item-detail-place">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                                <span>Cần Thơ</span> 
+                                            </div>
+                                            
+                                        </div>
+                                        <h3 class="tour item-name">Tour Du Lịch Cần Thơ 2 Ngày 3 Đêm</h3>
+
+                                        <div class="tour item-price">
+                                            <span class="tour item-price-old">355.000đ</span>
+                                            <span class="tour item-price-current">337.000đ</span>
+                                        </div>
+                                        
+                                        <div class="tour item-action">
+                                            <div class="tour item-action-rating">
+                                                <i class="fas fa-star"></i>
+                                                <span>4.6 | 28K+ </span>
+                                            </div>
+
+                                            <div class="tour item-action-like status-liked">
+                                                <i class="icon-like far fa-heart"></i>
+                                                <i class="icon-liked fas fa-heart"></i>
+                                            </div>
+
+                                            <div class="tour item-action-addcart">
+                                                <i class="fas fa-cart-plus"></i>
+                                            </div>
+
+                                        </div>
+
+                                    <div class="label-favourite">
+                                        <i class="fas fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                            
+                                    <div class="label-sale-off">
+                                        <span class="discount">-15%</span>
+                                        <span class="discount-label">GIẢM</span>
+                                    </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="list column-2">
+                                <div class="card-container 15">
+                                    <a href=""> 
+                                        <div class="card tour item-img" 
+                                            style="background-image: url('images/tour/tour-tham-quan-mui-ca-mau.jpg')">
+                                        
+                                            <div class="tour item-detail-type">
+                                                <i class="fas fa-tags"></i>
+                                                <span>Tour tham quan</span>
+                                            </div>
+                                            <div class="tour item-detail-place">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                                <span>Cà Mau</span> 
+                                            </div>
+                                            
+                                        </div>
+                                        <h3 class="tour item-name">Tour Du Lịch Cà Mau 1 ngày  2 đêm</h3>
+
+                                        <div class="tour item-price">
+                                            <span class="tour item-price-old">350.000đ</span>
+                                            <span class="tour item-price-current">263.000đ</span>
+                                        </div>
+                                        
+                                        <div class="tour item-action">
+                                            <div class="tour item-action-rating">
+                                                <i class="fas fa-star"></i>
+                                                <span>4.8 | 42K+ </span>
+                                            </div>
+
+                                            <div class="tour item-action-like status-liked">
+                                                <i class="icon-like far fa-heart"></i>
+                                                <i class="icon-liked fas fa-heart"></i>
+                                            </div>
+
+                                            <div class="tour item-action-addcart">
+                                                <i class="fas fa-cart-plus"></i>
+                                            </div>
+
+                                        </div>
+
+                                    <div class="label-favourite">
+                                        <i class="fas fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                            
+                                    <div class="label-sale-off">
+                                        <span class="discount">-25%</span>
+                                        <span class="discount-label">GIẢM</span>
+                                    </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="list column-2">
+                                <div class="card-container 16">
+                                    <a href=""> 
+                                        <div class="card tour item-img" 
+                                            style="background-image: url('images/tour/tour-tham-quan-da-nang.jpg')">
+                                        
+                                            <div class="tour item-detail-type">
+                                                <i class="fas fa-tags"></i>
+                                                <span>Tour tham quan</span>
+                                            </div>
+                                            <div class="tour item-detail-place">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                                <span>đà nẵng</span> 
+                                            </div>
+                                            
+                                        </div>
+                                        <h3 class="tour item-name">Tour Du lịch đà nẵng Trong 1 Ngày</h3>
+
+                                        <div class="tour item-price">
+                                            <span class="tour item-price-old">350.000đ</span>
+                                            <span class="tour item-price-current">263.000đ</span>
+                                        </div>
+                                        
+                                        <div class="tour item-action">
+                                            <div class="tour item-action-rating">
+                                                <i class="fas fa-star"></i>
+                                                <span>4.8 | 42K+ </span>
+                                            </div>
+
+                                            <div class="tour item-action-like status-liked">
+                                                <i class="icon-like far fa-heart"></i>
+                                                <i class="icon-liked fas fa-heart"></i>
+                                            </div>
+
+                                            <div class="tour item-action-addcart">
+                                                <i class="fas fa-cart-plus"></i>
+                                            </div>
+
+                                        </div>
+
+                                    <div class="label-favourite">
+                                        <i class="fas fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                            
+                                    <div class="label-sale-off">
+                                        <span class="discount">-25%</span>
+                                        <span class="discount-label">GIẢM</span>
+                                    </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="list column-2">
+                                <div class="card-container 17">
+                                    <a href=""> 
+                                        <div class="card tour item-img" 
+                                            style="background-image: url('images/tour/tour-tham-quan-pho-co-hoi-an.jpg')">
+                                        
+                                            <div class="tour item-detail-type">
+                                                <i class="fas fa-tags"></i>
+                                                <span>Tour tham quan</span>
+                                            </div>
+                                            <div class="tour item-detail-place">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                                <span>Quảng Nam</span> 
+                                            </div>
+                                            
+                                        </div>
+                                        <h3 class="tour item-name">Tour Du Lịch Hội An 2 Ngày 1 đêm</h3>
+
+                                        <div class="tour item-price">
+                                            <span class="tour item-price-old">355.000đ</span>
+                                            <span class="tour item-price-current">230.000đ</span>
+                                        </div>
+                                        
+                                        <div class="tour item-action">
+                                            <div class="tour item-action-rating">
+                                                <i class="fas fa-star"></i>
+                                                <span>4.6 | 45K+ </span>
+                                            </div>
+
+                                            <div class="tour item-action-like status-liked">
+                                                <i class="icon-like far fa-heart"></i>
+                                                <i class="icon-liked fas fa-heart"></i>
+                                            </div>
+
+                                            <div class="tour item-action-addcart">
+                                                <i class="fas fa-cart-plus"></i>
+                                            </div>
+
+                                        </div>
+
+                                    <div class="label-favourite">
+                                        <i class="fas fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                            
+                                    <div class="label-sale-off">
+                                        <span class="discount">-35%</span>
+                                        <span class="discount-label">GIẢM</span>
+                                    </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="list column-2">
+                                <div class="card-container 18">
+                                    <a href=""> 
+                                        <div class="card tour item-img" 
+                                            style="background-image: url('images/tour/tour-tham-quan-quang-truong-da-lat.jpg')">
+                                        
+                                            <div class="tour item-detail-type">
+                                                <i class="fas fa-tags"></i>
+                                                <span>Tour tham quan</span>
+                                            </div>
+                                            <div class="tour item-detail-place">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                                <span>Đà lạt</span> 
+                                            </div>
+
+                                        </div>
+                                        <h3 class="tour item-name">Tour Tham Quan Quảng Trường đà lạt</h3>
+
+                                        <div class="tour item-price">
+                                            <span class="tour item-price-old">345.000đ</span>
+                                            <span class="tour item-price-current">213.000đ</span>
+                                        </div>
+                                        
+                                        <div class="tour item-action">
+                                            <div class="tour item-action-rating">
+                                                <i class="fas fa-star"></i>
+                                                <span>4.7 | 12K+ </span>
+                                            </div>
+
+                                            <div class="tour item-action-like status-liked">
+                                                <i class="icon-like far fa-heart"></i>
+                                                <i class="icon-liked fas fa-heart"></i>
+                                            </div>
+
+                                            <div class="tour item-action-addcart">
+                                                <i class="fas fa-cart-plus"></i>
+                                            </div>
+
+                                        </div>
+
+                                    <div class="label-favourite">
+                                        <i class="fas fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                            
+                                    <div class="label-sale-off">
+                                        <span class="discount">-35%</span>
+                                        <span class="discount-label">GIẢM</span>
+                                    </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="list column-2">
+                                <div class="card-container 19">
+                                    <a href=""> 
+                                        <div class="card tour item-img" 
+                                            style="background-image: url('images/tour/tour-tham-quan-vung-tau.jpg')">
+                                        
+                                            <div class="tour item-detail-type">
+                                                <i class="fas fa-tags"></i>
+                                                <span>Tour tham quan</span>
+                                            </div>
+                                            <div class="tour item-detail-place">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                                <span>Vũng tàu</span> 
+                                            </div>
+                                            
+                                        </div>
+                                        <h3 class="tour item-name">Tour Du Lịch Vũng Tàu 2 Ngày 1 Đêm</h3>
+
+                                        <div class="tour item-price">
+                                            <span class="tour item-price-old">350.000đ</span>
+                                            <span class="tour item-price-current">263.000đ</span>
+                                        </div>
+                                        
+                                        <div class="tour item-action">
+                                            <div class="tour item-action-rating">
+                                                <i class="fas fa-star"></i>
+                                                <span>4.8 | 42K+ </span>
+                                            </div>
+
+                                            <div class="tour item-action-like status-liked">
+                                                <i class="icon-like far fa-heart"></i>
+                                                <i class="icon-liked fas fa-heart"></i>
+                                            </div>
+
+                                            <div class="tour item-action-addcart">
+                                                <i class="fas fa-cart-plus"></i>
+                                            </div>
+
+                                        </div>
+
+                                    <div class="label-favourite">
+                                        <i class="fas fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                            
+                                    <div class="label-sale-off">
+                                        <span class="discount">-25%</span>
+                                        <span class="discount-label">GIẢM</span>
+                                    </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="list column-2">
+                                <div class="card-container 20">
+                                    <a href=""> 
+                                        <div class="card tour item-img" 
+                                            style="background-image: url('images/tour/tour-tham-quan-quảng-ninh.jpg')">
+                                        
+                                            <div class="tour item-detail-type">
+                                                <i class="fas fa-tags"></i>
+                                                <span>Tour tham quan</span>
+                                            </div>
+                                            <div class="tour item-detail-place">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                                <span>Quảng Ninh</span> 
+                                            </div>
+                                            
+                                        </div>
+                                        <h3 class="tour item-name">Tour Du Lịch Hạ Long 2 Ngày 1 Đêm</h3>
+
+                                        <div class="tour item-price">
+                                            <span class="tour item-price-old">255.000đ</span>
+                                            <span class="tour item-price-current">217.000đ</span>
+                                        </div>
+                                        
+                                        <div class="tour item-action">
+                                            <div class="tour item-action-rating">
+                                                <i class="fas fa-star"></i>
+                                                <span>4.5 | 32K+ </span>
+                                            </div>
+
+                                            <div class="tour item-action-like status-liked">
+                                                <i class="icon-like far fa-heart"></i>
+                                                <i class="icon-liked fas fa-heart"></i>
+                                            </div>
+
+                                            <div class="tour item-action-addcart">
+                                                <i class="fas fa-cart-plus"></i>
+                                            </div>
+
+                                        </div>
+
+                                    <div class="label-favourite">
+                                        <i class="fas fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                            
+                                    <div class="label-sale-off">
+                                        <span class="discount">-15%</span>
+                                        <span class="discount-label">GIẢM</span>
+                                    </div>
+                                    </a>
+                                </div>
+                            </div>
                         
                         </div>
 
                         <div class="pagination">
-                            <a href="#"><i class="fas fa-angle-double-left"></i></a>
-                            <a class="active" href="#">1</a>
-                            <a href="#2">2</a>
-                            <a href="#3">3</a>
-                            <a href="#">4</a>
-                            <a href="#">5</a>
-                            <a href="#">6</a>
-                            <a href="#"><i class="fas fa-angle-double-right"></i></a>
+                            <a href="#" class="page-control-btn page-control-btn-disable"><i class="fas fa-angle-double-left"></i></a>
+                            <a href="#" class="page-control-btn page-control-btn-disable"><i class="fas fa-chevron-left"></i></a>
+                            <a class="page-current" href="#">1</a>
+                            <a class="page-num" href="#2">2</a>
+                            <a class="page-num" href="#3">3</a>
+                            <a class="page-num" href="#">4</a>
+                            <a class="page-num" href="#">5</a>
+                            <a class="page-num" href="#">6</a>
+                            <a href="#" class="page-control-btn"><i class="fas fa-chevron-right"></i></a>
+                            <a href="#" class="page-control-btn"><i class="fas fa-angle-double-right"></i></a>
                           </div>
 
                         </div>
@@ -627,6 +1157,17 @@
             </div>
         </section>
     </main>
-</body>
+    <div id="footer"></div>
+    <script> 
+        $(function(){
+             $(".header").load("header.html"); 
+         });
+     </script>     
+    <script> 
+        $(function(){
+            $("#footer").load("footer.html"); 
+        });
+    </script> 
     <script src="js/feature.js"></script>
+</body>
 </html>

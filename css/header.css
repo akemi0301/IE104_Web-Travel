@@ -19,7 +19,7 @@ body{
     height: 100%;
 }
 header{
-    width: 96%;
+    width: 98%;
     background: #fff;
     display: flex;
     align-items:center;
@@ -30,7 +30,7 @@ header{
     transform: translateX(-50%);
     border-radius: .5rem;
     box-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
-    padding: .2rem;
+    padding: .2rem 0;
     transition: .2s linear;
     z-index: 1000;
 }
@@ -38,6 +38,7 @@ header{
     top: 0;
     width: 100%;
     border-radius: 0;
+    padding-left: .5rem;
 }
 header .logo {
     color: #333;
@@ -80,9 +81,9 @@ header .search-input{
 }
 header .navbar {
     position: absolute;
-    right: 0px;
-    width: 904px;
-    padding: 10px;
+    width: 61%;
+    padding: 5px;
+    right: 0;
 }
 header .navbar-list{
     list-style: none;

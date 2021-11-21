@@ -1,18 +1,19 @@
 # IE104_Web-Travel
 Đồ án môn học IE104
-## Cách để get header.
+## Get header.
 
     <head>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    
+    <body>
+        <div class="header"></div>
+        <main></main>
         <script> 
             $(function(){
               $(".header").load("header.html"); 
             });
         </script>
-    </head>
-    
-    <body>
-        <div class="header"></div>
     </body>
 
 ## Get footer

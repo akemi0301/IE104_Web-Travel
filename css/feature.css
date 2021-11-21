@@ -52,6 +52,11 @@
     width: 19.5%;
     display: inline-block;
 }
+.list .select-bar{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 3.5rem;
+}
 .list .column-2 .category{
     background: #eee;
     border-radius: 5px;
@@ -112,12 +117,17 @@
     border-radius: 6px;
 }
 .list .column-10 .feature-filter .btn-active{
-    color: var(--main-color);
+    color: #fff;
+    font-size: 1rem;
+    background-color: var(--main-color);
 }
-.list .column-10 .feature-filter .btn span{
+.list .column-10 .feature-filter .btn{
     font-size: 1rem;
     align-items: center;
-    color: #000;
+}
+.list .column-10 .feature-filter .btn:hover:not(.btn-active){
+    background-color: #666;
+    color: #fff;
 }
 .list .column-10 .feature-filter span{
     font-size: 1.2rem;
@@ -128,6 +138,10 @@
     height: 2.5rem;
     border-radius: 7px;
     border: none;
+    outline: none;
+}
+.list .column-10 .feature-filter select:hover{
+    border: 1px solid var(--main-color);
 }
 .list .column-10 .feature-filter .feature-filter-page{
     display: flex;
@@ -138,7 +152,7 @@
     font-size: 1.2rem;
     margin-right: .5rem;
 }
-.list .column-10 .feature-filter .feature-filter-page .page-current{
+.list .column-10 .page-current{
     color: var(--main-color);
     font-size: 1.2rem;
 }
@@ -160,13 +174,13 @@
 .list .column-10 .feature-filter .feature-filter-page .page-control-btn .fas{
     margin: auto;
 }
-.list .column-10 .feature-filter .feature-filter-page .page-control-btn-disable{
-    background-color: #f9f9f9;
-    cursor: default;
+.list .column-10 .page-control-btn-disable{
+    background-color: none;
+    cursor:not-allowed;
 }
-.list .column-10 .feature-filter .feature-filter-page .page-control-btn-disable .fas{
+.list .column-10 .page-control-btn-disable .fas{
     color: #ccc;
-    cursor: default;
+    cursor: not-allowed;
 }
 .list .column-2 .card {
     padding-top: 100%;
@@ -180,6 +194,7 @@
     margin: 5px;
     color: var(--main-color);
     font-size: 1.4rem;
+    text-transform: capitalize;
     margin-top: .5rem;
     line-height: 1.75rem;
     text-align: center;
@@ -197,6 +212,8 @@
     align-items: baseline;
     flex-wrap: wrap;
     margin: .2rem;
+    justify-content: center;
+    font-weight: 600;
 }
 .list .column-2 .item-price-old{
     margin-left: 5px;
@@ -212,7 +229,7 @@
 .list .column-2 .item-action{
     display: flex;
     flex-wrap: wrap;
-    margin: 0 5px;
+    margin: 0 10px 5px;
     align-items: baseline;
 }
 .list .column-2 .item-action-rating{
@@ -224,7 +241,8 @@
     color: gold;
 }
 .list .column-2 .item-action-rating span{
-    font-size: 1.4rem;
+    font-size: 1.1rem;
+    color: #666;
 }
 .list .column-2 .item-action-like .far{
     font-size: 1.5rem;
@@ -247,7 +265,7 @@
 .list .column-2 .item-detail-type{
     margin: 0 5px;
     font-size: 1rem;
-    color: #fff;
+    color: rgba(255, 255, 255, 255);
     position: absolute;
     bottom: 1.4rem;
 }
@@ -262,14 +280,21 @@
     position: absolute;
     bottom: 0;
 }
+.list .column-2 .item-detail-place span{
+    text-transform: capitalize;
+}
 .list .column-2 .item-detail-place .fas{
     color: yellow;
     font-size: 1rem;
 }
 .list .column-2 .card-container{
     position: relative;
-    border: 1px solid #ccc;
+    border: .3px solid #ccc;
     border-radius: 10px;
+}
+.list .column-2 .card-container:hover{
+    transform: translateY(-4px);
+    box-shadow:  0 1px 20px 0 rgba(0,0,0,.9);
 }
 .list .column-2 .card-container .label-favourite{
     position: absolute;
@@ -336,21 +361,23 @@
 .list .column-10 .pagination a {
     color: black;
     float: right;
-    font-size: 1.3rem;
+    font-size: 1rem;
     padding: 8px 16px;
     text-decoration: none;
     transition: background-color .3s;
+    border: .5px solid #ccc;
+    border-radius: 7px;
+    margin: .2rem;
 }
 .list .column-10 .pagination a .fas{
     color: black;
     font-size: 1rem;
 }
-.list .column-10 .pagination a.active {
+.list .column-10 .pagination .page-current {
     background-color:  var(--main-color);
     color: white;
 }
-.list .column-10 .pagination a .fas:hover,
-.list .column-10 .pagination a:hover:not(.active) {
+.list .column-10 .pagination a:hover:not(.page-current, .page-control-btn-disable) {
     background-color: #666;
     color: white;
 }
