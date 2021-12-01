@@ -2,5 +2,6 @@
     "cSpell.words": [
         "kiếm"
     ],
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "cmake.configureOnOpen": false
 }

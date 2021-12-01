@@ -1,0 +1,95 @@
+body {
+    width: 100%;
+    margin: 0 auto;
+}
+main {
+    background-color: #eee;
+}
+h1 {
+    text-align: left;
+    padding: 6rem 2rem .5rem;
+    color: var(--main-color);
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+.review {
+    padding-left: 30px;
+    margin: 0  0 1rem;
+    font-size: 1.2rem;
+}
+.review .fas {
+    color: gold;
+    cursor: default;
+}
+.review .star{
+    color: #666;
+    font-weight: 600;
+}
+.review .comment{
+    color: red;
+    font-weight: 600;
+}
+.review .comment:hover{
+    cursor: pointer;
+}
+.review .order{
+    color: green;
+    font-weight: 600;
+}
+.info-tour{
+    background-color: #eee;
+}
+.description{
+    width: 100%;
+    display: flex;
+}
+.description .text-description{
+    padding-left: 60px;
+    width: 45%;
+}
+.full-img {
+    position: relative;
+    display: block;
+    width: 700px;
+    height: 400px;
+    margin: 0;
+    padding-left: 30px;
+}
+.displayed-img{
+    width: 700px;
+    height: 400px;
+}
+.info-tour .fa-chevron-circle-left{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 30px;
+    font-size: 1.7rem;
+    color: #eee;
+}
+.info-tour .fa-chevron-circle-right{
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.7rem;
+    color: #eee;
+}
+/* .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #eee;
+    /* background-color: rgba(0,0,0,0);
+}  */
+.thumb-bar{
+    padding-right: 10px;
+}
+.thumb-bar img {
+    display: block;
+    width: 140px;
+    height: 100px;
+    float: right;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
