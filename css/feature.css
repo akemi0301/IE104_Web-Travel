@@ -16,7 +16,7 @@
     z-index: -1;
 }
 .feature .content{
-    margin-top: 2rem;
+    margin: 2rem 0;
     position: absolute;
     top: 150px;
     left: 0;
@@ -27,7 +27,13 @@
     color: #fff;
     text-shadow: 0 .3rem .5rem #000;
     text-align: center;
-    
+    margin: 2rem;
+}
+.feature .content p{
+    font-size: 2vw;
+    color: #fff;
+    text-shadow: 0 .3rem .5rem #000;
+    text-align: center;
 }
 .list{
     height: 100%;
