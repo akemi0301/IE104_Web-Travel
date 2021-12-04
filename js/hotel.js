@@ -2,7 +2,7 @@ let hotel = [
     {
         name: 'VinOasis Phú Quốc',
         image1: './images/hotel/hotel-vinOasis-phu-quoc.jpg',
-        image2: './images/hotel/phong-standard-1558173439.jpg',
+        image2: './images/hotel/gia-phong-vinpearl-oasis-phu-quoc-uu-dai.jpg',
         old_price: '5.138.574 đ',
         curr_price: '1.800.866 đ'
     },

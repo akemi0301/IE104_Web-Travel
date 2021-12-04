@@ -1,5 +1,5 @@
 .hotel{
-    min-height: 100vh;
+    min-height: 500px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -10,18 +10,24 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
+    height: 500px;
     width: 100%;
     object-fit: cover;
     z-index: -1;
 }
 .hotel .content{
-    margin-top: 5rem;
+    margin: 2rem 0;
+    position: absolute;
+    top: 150px;
+    left: 0;
+    right: 0;
 }
 .hotel .content h1{
-    font-size: 3vw;
-    color: #fff;
-    text-shadow: 0 .3rem .5rem #000;
+        font-size: 3vw;
+        color: #fff;
+        text-shadow: 0 .3rem .5rem #000;
+        text-align: center;
+        margin: 2rem;
 }
 
 .grid{
@@ -256,7 +262,7 @@
 } 
 
 .book{
-    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("/images/banner-img.jpg") center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("/images/hotel/banner-img.jpg") center/cover no-repeat;
     color: #fff;
     padding: 40px 60px;
 }
@@ -535,7 +541,7 @@ li {
 }
 
 img {
-    max-width: 100%;
+    max-width: initial;
 }
 
 .container {
@@ -894,6 +900,7 @@ ul.devided > li:last-child {
     overflow: hidden;
     display: flex;
     align-items: center;
+    object-fit: cover;
     justify-content: center;
 }
 
@@ -1114,29 +1121,34 @@ ul.devided > li:last-child {
 }
 
 
-.pagination {
+ .pagination {
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
-
-.pagination > li > a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 35px;
-    height: 35px;
-    margin-left: 5px;
-    font-size: 20px;
+.pagination a {
+    color: black;
+    float: right;
+    font-size: 1rem;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: .5px solid #ccc;
+    border-radius: 7px;
+    margin: .2rem;
+}
+.pagination a .fas{
+    color: black;
+    font-size: 1rem;
+}
+ .pagination .page-current {
+    background-color:  var(--main-color);
+    color: white;
 }
 
-.pagination > li > a.active {
-    background-color: var(--black);
-    color: var(--main-bg-color);
-}
-
-.pagination > li > a:hover {
-    border: 2px solid var(--black);
+ .pagination a:hover:not(.page-current, .page-control-btn-disable) {
+    background-color: #666;
+    color: white;
 }
 
 .product-img {
