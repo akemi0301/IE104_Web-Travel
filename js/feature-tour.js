@@ -26,6 +26,7 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
 function total(){
       var x= document.getElementsById("slngl").value;
       var y= document.getElementById("sltre").value;
