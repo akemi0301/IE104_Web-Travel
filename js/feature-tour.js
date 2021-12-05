@@ -27,9 +27,41 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 
-function total(){
-      var x= document.getElementsById("slngl").value;
-      var y= document.getElementById("sltre").value;
-      var total = x*875000 + y*500000;
-      document.querySelector('#total').innerHTML = total;
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
 }
+
+// var coll = document.getElementsByClassName("collapsible");
+// var i;
+
+// for (i = 0; i < coll.length; i++) {
+//   coll[i].addEventListener("click", function() {
+//     this.classList.toggle("active");
+//     var content = this.nextElementSibling;
+//     if (content.style.display === "block") {
+//       content.style.display = "none";
+//     } else {
+//       content.style.display = "block";
+//     }
+//   });
+// }
+$(document).ready(function () {
+  $('input[type="radio"]').click(function () {
+      var inputValue = $(this).attr("value");
+      var targetBox = $("." + inputValue);
+      $(".pay").not(targetBox).hide();
+      $(targetBox).show();
+  });
+  
+});
