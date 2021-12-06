@@ -660,7 +660,7 @@ img {
 }
 
 .product-img > img {
-    max-width: 70%;
+    max-width: 100%;
 }
 
 .product-img-list {
@@ -670,7 +670,7 @@ img {
 }
 
 .product-img-item {
-    width: 90px;
+    width: 120px;
     cursor: pointer;
     margin: 0 10px;
     border: 1px solid var(--third-bg-color);
@@ -694,7 +694,7 @@ img {
 }
 
 .product-description {
-    font-size: 18px;
+    font-size: 25px;
     text-align: justify;
 }
 
@@ -750,7 +750,12 @@ img {
     position: relative;
 }
 .product-detail-description-content img{
-    display: block; margin-left: auto; margin-right: auto;
+    display: block;
+     margin-left: auto; 
+     margin-right: auto;
+     max-width: 800px;
+     max-height: 800px;
+     border-style: none;
 }
 
 .product-detail-description-content.active {
@@ -798,6 +803,94 @@ img {
 
 .user-rate-content {
     line-height: 25px;
+}
+
+.num-star{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rate-hotel .heading {
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+.rate-hotel .fa {
+    font-size: 1.5rem;
+}
+.rate-hotel p{
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+.rate-hotel .checked , .rate-hotel .fa-star{
+    color: orange;
+}
+.rate-hotel .side {
+    float: left;
+    width: 8%;
+    margin-top: .5rem;
+    margin-left: 1rem;
+}
+.rate-hotel span{
+    font-size: 1.2rem;
+}
+.rate-hotel .line{
+    margin-left: 1rem;
+}
+.rate-hotel .middle {
+    margin-top:10px;
+    float: left;
+    width: 75%;
+    position: relative;
+}
+.rate-hotel .right {
+    text-align: right;
+  }
+.rate-hotel .rate-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.rate-hotel .bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+}
+.rate-hotel .bar-5 {width: 60%; height: 18px; background-color: #04AA6D;}
+.rate-hotel .bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+.rate-hotel .bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+.rate-hotel .bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+.rate-hotel .bar-1 {width: 15%; height: 18px; background-color: #f44336;}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.pagination a {
+    color: black;
+    float: right;
+    font-size: 1rem;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: .5px solid #ccc;
+    border-radius: 7px;
+    margin: .2rem;
+}
+.pagination a .fas{
+    color: black;
+    font-size: 1rem;
+}
+ .pagination .page-current {
+    background-color:  var(--main-color);
+    color: white;
+}
+
+ .pagination a:hover:not(.page-current, .page-control-btn-disable) {
+    background-color: #666;
+    color: white;
 }
 
 /* responsive */
