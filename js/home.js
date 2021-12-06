@@ -92,7 +92,7 @@ $(document).ready(function(){
 
     $('.card-container').slick({
       isFinite: true,
-      slidesToShow: 5,
+      slidesToShow: 3,
       slidesToScroll: 1,
       variableWidth: false,
       prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fas fa-chevron-circle-left'></i></button>",
