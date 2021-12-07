@@ -99,27 +99,20 @@ $(document).ready(function(){
       nextArrow:"<button type='button' class='slick-next pull-right'><i class='fas fa-chevron-circle-right'></i></button>",
       responsive: [
         {
-          breakpoint: 1276,
+          breakpoint: 1190,
           settings: {
-            slidesToShow: 4,
+            slidesToShow: 2,
             slidesToScroll: 1,
             inFinite: true,
           }
         },
         {
-          breakpoint: 900,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1,
-          }
-        },
-        {
-          breakpoint: 600,
+          breakpoint: 1040,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
           }
-        }
+        },
       ]
       });
 
