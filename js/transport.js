@@ -10,7 +10,7 @@ $(document).ready(function(){
         {
           breakpoint: 1276,
           settings: {
-            slidesToShow: 4,
+            slidesToShow: 3,
             slidesToScroll: 1,
             inFinite: true,
           }
@@ -18,7 +18,7 @@ $(document).ready(function(){
         {
           breakpoint: 900,
           settings: {
-            slidesToShow: 3,
+            slidesToShow: 2,
             slidesToScroll: 1,
           }
         },
