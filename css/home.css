@@ -1,5 +1,63 @@
+main{
+    display: flex;
+    padding: 0 1.5rem;
+    background-color: #f5f5f5;
+}
+aside{
+    width: 20%;
+    min-width: 200px;
+    height: 400px;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 5px;
+    margin: 2rem 0;
+    overflow: hidden;
+    position: sticky;
+    top: 4.5rem;
+}
+.category{
+    background: #eee;
+    border-radius: 5px;
+    padding: 1.2rem;
+    margin: 2rem .5rem;
+}
+.category h3 span, .category h3 i{
+    font-size: 1.5rem;
+    color: var(--main-color);
+}
+.category-item{
+    list-style: none;
+    margin-left: .5rem;
+}
+.category-item-link{
+    font-size: 1.2rem;
+    color: #000;
+    display: block;
+    padding: .7rem 1.5rem;
+    text-decoration: none;
+    position: relative;
+}
+.category-item-link:hover{
+    color: var(--main-color);
+}
+.list .category-item-active .category-item-link{
+    color: var(--main-color);
+}
+.list .category-item-active .category-item-link::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    border: .6rem solid;
+    border-color: transparent transparent transparent var(--main-color);
+    transform: translateY(-50%);
+}
+section{
+    width: 80%;
+    height: 100%;
+}
 .home{
-    min-height: 100vh;
+    min-height: 80vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -18,75 +76,91 @@
 .home .content{
     margin-top: 5rem;
 }
-.home .content h1{
-    font-size: 5vw;
-    color: #fff;
-    text-shadow: 0 .3rem .5rem #000;
-}
-.home .content p{
-    font-size: 1.5vw;
-    color: #eee;
-    text-shadow: 0 .3rem .5rem #000;
-    padding-left: 2rem;
-    border-left: .3rem solid #ddd;
-    letter-spacing: .1rem;
-    word-spacing: .1rem;
-}
-.home .form-container form{
-    margin-top: 5rem;
-    padding: 2rem;
-    width: 25rem;
-    background-color: #fff;
-    box-shadow: 0 .3rem .5rem rgba(0,0,0,.9);
-    border-radius: .7rem;
-}
-.home .form-container form h3{
-    color: #333;
-    font-size: 1.7rem;
-    text-align: center;
-}
-.home .form-container form span{
-    color: var(--main-color);
-    font-size: 1.3rem;
-    margin: .5rem 0;
+.home .content img{
+    width: 40%;
+    height: 100px;
+    margin: 1.5rem;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* opacity: .3; */
 }
-.home .form-container form input{
-    width: 100%;
-    padding: 0 1rem;
-    height: 3rem;
-    font-size: 1.2rem;
-    background-color: #eee;
-    border: none;
-    outline: none;
-    color: #333;
-    box-shadow: 0 .1rem ,3rem rgba(0,0,0,.3) inset;
-    border-radius: .5rem;
-}
-.home .form-container form input[type="submit"]{
-    width: 10rem;
+.home .content h1{
+    font-size: 4vw;
     color: #fff;
-    background-color: var(--main-color);
-    cursor: pointer;
-    font-size: 1.5rem;
-    margin-top: 2rem;
-    transition: .2s linear;
+    text-shadow: 0 .3rem .5rem #000;
+    text-align: center;
+    margin: .3rem;
 }
-.home .form-container form input[type="submit"]:hover{
-    border: .2rem solid --main-color;
-    color: var(--main-color);
-    background: none;
-} 
+.home .content h3{
+    font-size: 3vw;
+    color: #fff;
+    text-shadow: 0 .3rem .5rem #000;
+    text-align: center;
+    margin: 1rem;
+}
+.home .content h4{
+    font-size: 1rem;
+    color: #fff;
+    text-shadow: 0 .3rem .5rem #000;
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: 400;
+}
+.home .search-home{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    background-color: rgba(122, 119, 119, 0.397);
+    padding: .3rem;
+}
+form.search-home input[type=text] {
+    margin: .5rem;
+    padding: .7rem;
+    font-size: 1rem;
+    border: none;
+    float: left;
+    width: 80%;
+    background: #eee;
+    border-radius: 5px;
+}
+form.search-home button {
+    float: left;
+    width: 16%;
+    padding: .7rem;
+    background: var(--main-color);
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-left: none;
+    cursor: pointer;
+    margin: .5rem;
+    border-radius: 5px;
+}
+form.search-home button span{
+     padding: .5rem;
+}
+  
+form.search-home button:hover {
+    background: #0b7dda;
+}
+  
+form.search-home::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 
-
-
-.grid{
+.home-section .grid{
     width: 100%;
-    height: 100%;
     background: #f5f5f5;
     padding-top: 1rem;
+    padding: 1rem;
 }
-.grid .heading{
+.home-section .grid .heading{
     color:var(--main-color);
     font-size: 2rem;
     /* padding-top: 5rem; */
@@ -94,7 +168,7 @@
     letter-spacing: .2rem;
     padding: 2.5rem;
 }
-.grid .card-container{
+.home-section .grid .card-container{
     display: flex;
     align-items: center;
     justify-content:center;
@@ -102,7 +176,7 @@
     width: 98%;
     margin: auto;
 }
-.grid .card-container .card{
+.home-section .grid .card-container .card{
     max-width: 16.6%;
     width: 500px;
     height: 450px;
@@ -114,15 +188,15 @@
     transition: transform linear .2s;
     /* border: 1px solid black; */
 }
-.grid .card-container .card a{
+.home-section .grid .card-container .card a{
     outline: none;
     color: #333;
 }
-.grid .card-container .card:hover{
+.home-section .grid .card-container .card:hover{
     transform: translateY(-5px);
     box-shadow:  0 1px 20px 0 rgba(0,0,0,.9);
 }
-.grid .card-container .slide-show{
+.home-section .grid .card-container .slide-show{
     width: 100%;
     height: 250px;
     display: flex;
@@ -132,55 +206,55 @@
     border-top-left-radius: .7rem;
     border-top-right-radius: .7rem;
 }
-.grid .card-container .slide-show img{
+.home-section .grid .card-container .slide-show img{
     position: absolute;
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
-.grid .card-container .card img.slide-show:not(:first-child){
+.home-section .grid .card-container .card img.slide-show:not(:first-child){
     display: none; 
 }
-.grid .card-container .content{
+.home-section .grid .card-container .content{
     width: 100%;
     height: 200px;
     text-align: center;
 }
-.grid .card-container .content-description{
+.home-section .grid .card-container .content-description{
     width: 100%;
     height: 130px;
     overflow: hidden;
     padding: .3rem .6rem;
     text-align: justify;
 }
-.grid .card-container .content .title{
+.home-section .grid .card-container .content .title{
     color: var(--main-color);
     font-size: 1.5rem;
     margin-top: .5rem;
     line-height: 1.65rem;
     text-align: center;
 }
-.grid .card-container .content .p{
+.home-section .grid .card-container .content .p{
     height: 100px;
     color: #333;
     font-size: 1.3rem;
 }
-.grid .card-container .content-reviews{
+.home-section .grid .card-container .content-reviews{
     width: 100%;
     height: 70px;
 }
-.grid .card-container .content i{
+.home-section .grid .card-container .content i{
     font-size: 1rem;
     color: gold;
     margin-top: .5rem;
     display: flex;
     left: .5rem;
 }
-.grid .card-container .content span{
+.home-section .grid .card-container .content span{
     color: #333;
     margin-left: .5rem;
 }
-.grid .card-container .content .btn{
+.home-section .grid .card-container .content .btn{
     font-size: 1rem;
     margin-top: .5rem;
     height: 2.5rem;
@@ -193,23 +267,24 @@
     cursor: pointer;
     transition: .2s linear;
 }
-.grid .card-container .content .btn:hover{
+.home-section .grid .card-container .content .btn:hover{
     background: none;
     border: .2rem solid var(--main-color);
     color: var(--main-color);
 }
-.grid .more-infomation{
-    height: 150px;
+.home-section .grid .more-infomation{
+    height: 100px;
+    position: relative;
 }
-.grid .more-infomation .btn:hover{
+.home-section .grid .more-infomation .btn:hover{
     box-shadow:  0 1px 20px 0 rgba(0,0,0,.9);
     cursor: pointer;
 }
-.grid .more-infomation .btn{
+.home-section .grid .more-infomation .btn{
     border: none;
     background-color: #eee;
     margin: 2rem;
-    width: 22%;
+    width: 30%;
     height: 4rem;
     border-radius: .5rem;
     font-size: 1.5rem;
@@ -221,16 +296,16 @@
     right: 0;
     left: 0;
 }
-.grid .fas {
+.home-section .grid .fas {
     font-size: 2rem;
 }
-.grid .card-favourite .fas {
+.home-section .grid .card-favourite .fas {
     font-size: 1.5rem;
 }
-.grid .more-infomation .fas{
+.home-section .grid .more-infomation .fas{
     color: var(--main-color);
 }
-.grid .card-favourite{
+.home-section .grid .card-favourite{
     position: absolute;
     top: 10px;
     left: -13px;
@@ -243,7 +318,7 @@
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-.grid .card-favourite::after{
+.home-section .grid .card-favourite::after{
     content: "";
     position: absolute;
     border-top: 9px solid currentColor;
@@ -252,22 +327,23 @@
     bottom: -9px;
     filter: brightness(50%);
 }
-.grid .card-favourite span {
+.home-section .grid .card-favourite span {
     color: #fff;
 }
-.grid .card-favourite i {
+.home-section .grid .card-favourite i {
     color: #fff;
     padding-left: .3rem;
 }
-.grid .card-top, .grid .card-hot{
+.home-section .grid .card-top, .home-section .grid .card-hot{
     position: absolute;
     right: 0;
     top: 0;
     width: 55px;
     height: 45px;
     background-color: rgba(255, 216, 64, .95);
+    border-top-right-radius: 5px;
 }
-.grid .card-top .top-label, .grid .card-hot .hot-label{
+.home-section .grid .card-top .top-label, .home-section .grid .card-hot .hot-label{
     color: red;
     font-weight: 1000;
     position: relative;
@@ -275,7 +351,7 @@
     top: 5px;
     font-size: 1.4rem;
 }
-.grid .card-top::after, .grid .card-hot::after{
+.home-section .grid .card-top::after, .home-section .grid .card-hot::after{
     content: "";
     position: absolute;
     right:  0;
@@ -284,28 +360,29 @@
     border-width: 0 27.5px 10px;
     border-color: transparent rgba(255, 216, 64, .95) transparent rgba(255, 216, 64, .95);
 }
-.grid .card-sale-off{
+.home-section .grid .card-sale-off{
     position: absolute;
     right: 0;
     top: 0;
     width: 55px;
     height: 50px;
     background-color: rgba(255, 216, 64, .95);
+    border-top-right-radius: 5px;
 
 }
-.grid .card-sale-off .discount{
+.home-section .grid .card-sale-off .discount{
     color: red;
     font-weight: 1000;
     font-size: 1.3rem;
 
 }
-.grid .card-sale-off .discount-label{
+.home-section .grid .card-sale-off .discount-label{
     color: #fff;
     font-weight: 1000;
     position: relative;
     left: 7px;
 }
-.grid .card-sale-off::after{
+.home-section .grid .card-sale-off::after{
     content: "";
     position: absolute;
     left: 0;
@@ -317,31 +394,31 @@
 
 .slick-prev, .slick-next {
     border: none;
-    width: 2.5rem;
-    height: 2.5rem;
-    background-color: rgba(158, 152, 152, 0.87);
+    width: 3rem;
+    height: 3rem;
+    background-color: rgba(158, 152, 152, 0.445);
     border-radius: 50%;
     border: none;
     z-index: 100;
 }
 .slick-prev{
     position: absolute;
-    left: -10px;
+    left: -22px;
     margin-left: 5px;
 }
 .slick-next{
     position: absolute;
-    right: -10px;
+    right: -22px;
     margin-right: 5px;
 }
 .slick-prev:hover, .slick-next:hover{
-    box-shadow:  0 1px 20px 0 rgba(0,0,0,.3);
-    background-color: #000;
+    box-shadow:  0 1px 20px 0 rgba(15, 15, 15, 0.822);
+    background-color: rgba(17, 17, 17, 0.836);
 }
 .slick-prev .fas, .slick-next .fas{
     width: 100%;
-    font-size: 2.5rem;
-    color: #fff;
+    font-size: 3rem;
+    color: rgba(241, 226, 226, 0.829);
 }
 .slick-dots{
     position: absolute;
@@ -378,13 +455,18 @@
         padding: 0;
         border: none;
     }
-    .grid{
+    .home-section .grid{
         height: 100%;
     }
-    .grid .card-container .card{
+    .home-section .grid .card-container .card{
         max-width: 40%;
     }
 } 
+@media screen and (max-width: 1250px){
+    form.search-home button span{
+        display: none;
+    }
+}
 @media screen and (max-width: 500px){
     .home .form-container form{
         width: 100%;
@@ -393,7 +475,7 @@
     .home .form-container form input[type="submit"]{
         width: 100%;
     }
-    .grid .card-container .card{
+    .home-section .grid .card-container .card{
         max-width: 70%;
     }
 } 
