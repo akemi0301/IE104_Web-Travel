@@ -100,7 +100,7 @@ section{
     margin: 1rem;
 }
 .home .content h4{
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #fff;
     text-shadow: 0 .3rem .5rem #000;
     text-align: center;
@@ -390,6 +390,16 @@ form.search-home::after {
     border-style: solid;
     border-width: 0 27.5px 10px;
     border-color: transparent rgba(255, 216, 64, .95) transparent rgba(255, 216, 64, .95);
+}
+.home-section .card-video{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.home-section .card-video video{
+    width: 33%;
+    height: 600px;
+    border-radius: 1rem;
+    padding: .5rem;
 }
 
 .slick-prev, .slick-next {
