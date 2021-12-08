@@ -120,8 +120,9 @@ img {
 }
 
 .product-discount{
-    color: #ff7d7d;
+    color: red;
     font-size: 20px;
+    font-weight: bolder;
 }
 
 .stars i{
@@ -1123,7 +1124,7 @@ img {
 }
 
 [class*="col-"] {
-    padding: 0 15px;
+    padding: 0 40px;
     margin-bottom: 20px;
 }
 
@@ -1278,3 +1279,97 @@ img {
         width: 100%;
     }
 }
+
+.container .col-75 {
+    -ms-flex: 75%;
+    flex: 75%;
+}
+
+.container .col-75 {
+    padding: 0 16px;
+}
+
+.container .form-container {
+    background-color:white;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+.container .form-container .pay{
+    display: none;
+}  
+.container input[type=text], .container input[type=date] {
+    width: 100%;
+    margin-bottom: .5rem;
+    padding: .5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.container input[type=number]{
+    width: 100%;
+    margin-bottom: .5rem;
+    padding: .5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+  
+.container label {
+    /* margin-bottom: .5rem; */
+    display: block;
+}
+  
+.container .icon-container {
+    margin: .5rem;
+    padding: .1rem 0;
+    font-size: 3.5rem;
+}
+.container .form-container table{
+    margin: 0;
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+.container .form-container th, .container .form-container td {
+    text-align: left;
+    padding: 8px;
+}
+.container .form-container img {
+    width:40%; 
+    height: 3.5rem; 
+    margin-left: .5rem;
+    border: 1px solid #929292;
+    border-radius: 5px;
+    padding: .5rem;
+}
+.container .form-container th {
+    background-color: navy;
+    color: white;
+}
+.container .btn-submit {
+    background-color: #04AA6D;
+    color: white;
+    padding: 1rem;
+    margin: 0 .5rem;
+    border: none;
+    width: 97%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+}
+  
+.container .btn:hover {
+    background-color: #45a049;
+}
+.container a {
+    color: #2196F3;
+}
+  
+.container hr {
+    border: 1px solid lightgrey;
+}
+  
+.container span.price {
+    float: right;
+    color: grey;
+}
+
