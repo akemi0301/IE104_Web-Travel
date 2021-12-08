@@ -124,6 +124,7 @@ form.search-home input[type=text] {
     border: none;
     float: left;
     width: 80%;
+    outline: none;
     background: #eee;
     border-radius: 5px;
 }
