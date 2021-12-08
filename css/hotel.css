@@ -30,200 +30,6 @@
         margin: 2rem;
 }
 
-.grid{
-    height: 100%;
-    background: #f9f9f9;
-}
-.grid .heading{
-    color:var(--main-color);
-    font-size: 2rem;
-    padding: 1rem;
-    padding-top: 2.5rem;
-    text-align: center;
-    letter-spacing: .2rem;
-    padding: 2rem;
-}
-.grid .card-container{
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    flex-wrap: nowrap;
-    width: 100%;
-}
-.grid .card-container .card{
-    max-width: 16.6%;
-    width: 500px;
-    height: 550px;
-    margin: 1rem;
-    background: #fff;
-    border-radius: .7rem;
-    box-shadow: 0 .3rem 5rem rgba(0,0,0,.3);
-    position: relative;
-    transition: transform linear .2s;
-}
-.slick-prev, .slick-next {
-    border: none;
-    width: 150px;
-    background-color: #fff;
-}
-.grid .card-container .card:hover{
-    transform: translateY(-5px);
-    box-shadow:  0 1px 20px 0 rgba(0,0,0,.9);
-}
-.grid .card-container .slide-show{
-    width: 100%;
-    height: 250px;
-    display: flex;
-    position: relative;
-    justify-content: center;
-    overflow: hidden;
-    border-top-left-radius: .7rem;
-    border-top-right-radius: .7rem;
-}
-.grid .card-container .slide-show img{
-    position: absolute;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-.grid .card-container .card img.slide-show:not(:first-child){
-    display: none; 
-}
-.grid .card-container .content{
-    width: 100%;
-    height: 350px;
-    text-align: center;
-}
-.grid .card-container .content-description{
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
-    padding: .5rem;
-}
-.grid .card-container .content .title{
-    color: var(--main-color);
-    font-size: 1.5rem;
-    margin-top: .5rem;
-}
-.grid .card-container .content .p{
-    height: 150px;
-    color: #333;
-    font-size: 1.3rem;
-    
-}
-.grid .card-container .content-reviews{
-    width: 100%;
-    height: 100px;
-    /* border: 1px solid black; */
-}
-.grid .card-container .content .stars i{
-    font-size: 1rem;
-    color: gold;
-    margin-top: .5rem;
-}
-.grid .card-container .content .btn{
-    font-size: 1rem;
-    margin-top: .5rem;
-    height: 2.5rem;
-    width: 8rem;
-    border-radius: .5rem;
-    outline: none;
-    border: none;
-    background: var(--main-color);
-    color: #fff;
-    cursor: pointer;
-    transition: .2s linear;
-}
-.grid .card-container .content .btn:hover{
-    background: none;
-    border: .2rem solid var(--main-color);
-    color: var(--main-color);
-}
-.grid .card-favourite{
-    position: absolute;
-    top: 10px;
-    left: -13px;
-    color: red;
-    background-color: currentColor;
-    font-size: 1.3rem;
-    margin: 0 3px 0 5px;
-    line-height: 1.6rem;
-    padding-right: 5px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-.grid .card-favourite::after{
-    content: "";
-    position: absolute;
-    border-top: 9px solid currentColor;
-    border-left: 9px solid transparent;
-    left: 0;
-    bottom: -9px;
-    filter: brightness(50%);
-}
-.grid .card-favourite span {
-    color: #fff;
-}
-.grid .card-favourite i {
-    color: #fff;
-    padding-left: .3rem;
-}
-.grid .card-top{
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 55px;
-    height: 45px;
-    background-color: rgba(255, 216, 64, .95);
-}
-.grid .card-top .top-label{
-    color: red;
-    font-weight: 1000;
-    position: relative;
-    left: 6px;
-    top: 5px;
-    font-size: 1.5rem;
-}
-.grid .card-top::after{
-    content: "";
-    position: absolute;
-    right:  0;
-    bottom: -10px;
-    border-style: solid;
-    border-width: 0 27.5px 10px;
-    border-color: transparent rgba(255, 216, 64, .95) transparent rgba(255, 216, 64, .95);
-}
-.grid .card-sale-off{
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 55px;
-    height: 50px;
-    background-color: rgba(255, 216, 64, .95);
-
-}
-.grid .card-sale-off .discount{
-    color: red;
-    font-weight: 1000;
-    font-size: 1.3rem;
-
-}
-.grid .card-sale-off .discount-label{
-    color: #fff;
-    font-weight: 1000;
-    position: relative;
-    left: 7px;
-}
-.grid .card-sale-off::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    border-style: solid;
-    border-width: 0 27.5px 10px;
-    border-color: transparent rgba(255, 216, 64, .95) transparent rgba(255, 216, 64, .95);
-}
-
 
 @media screen and (max-width: 1046px){
     .hotel{
@@ -929,6 +735,7 @@ ul.devided > li:last-child {
 
 .product-card-name {
     font-size: 20px;
+    font-weight: bold;
     margin-bottom: 10px;
 }
 
@@ -942,9 +749,15 @@ ul.devided > li:last-child {
 
 .product-card-price .curr-price {
     margin-left: 5px;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 600;
-    color: var(--red);
+    color: gold;    
+}
+
+.product-card-price .discount{
+    color: red;
+    font-size: 15px;
+    font-weight: bolder;
 }
 
 .product-btn {
