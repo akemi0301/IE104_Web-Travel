@@ -1,3 +1,7 @@
+html{
+    scroll-padding-top: 3rem;
+    scroll-behavior: smooth;
+ }
 .feature{
     min-height: 500px;
     display: flex;
@@ -200,6 +204,8 @@
     background-size: cover;
     background-position: center;
     position: relative;
+    border-top-left-radius: .7rem;
+    border-top-right-radius: .7rem;
 }
 .list .column-2 .item-name{
     margin: 5px;
