@@ -1,6 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 body {
   background: #00537e;
   background: -webkit-linear-gradient(to right, #00537e, #3aa17e);
   background: linear-gradient(to right, #00537e, #3aa17e);
   min-height: 100vh;
+}
+
+.container .table-responsive .align-middle .quantity-input {
+  margin: auto;
+  width: 5rem;
+}
+
+.container .table-responsive .align-middle .fa-trash-alt {
+  align-items: center;
 }

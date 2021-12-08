@@ -4,21 +4,22 @@
     <title>Shopping Cart</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <link rel="stylesheet"
     href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"">
     <link rel="stylesheet" href="slick/slick.css" />
+
     <link
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="js/home.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+
     <link rel="stylesheet" href="css/cart.css" />
-    <script>
-      $(function () {
-        $(".header").load("header.html");
-      });
-    </script>
   </head>
   <body>
     <div class="header"></div>
@@ -85,10 +86,17 @@
                       <td class="border-0 align-middle">
                         <strong>1.800.866 đ</strong>
                       </td>
-                      <td class="border-0 align-middle"><strong>1</strong></td>
+                      <td class="border-0 align-middle">
+                        <input
+                          id="quantity"
+                          type="number"
+                          value="1"
+                          class="form-control quantity-input"
+                        />
+                      </td>
                       <td class="border-0 align-middle">
                         <a href="#" class="text-dark"
-                          ><i class="fa fa-trash"></i
+                          ><i class="far fa-trash-alt"></i
                         ></a>
                       </td>
                     </tr>
@@ -114,11 +122,18 @@
                           </div>
                         </div>
                       </th>
-                      <td class="align-middle"><strong>2.080.00 đ</strong></td>
-                      <td class="align-middle"><strong>3</strong></td>
+                      <td class="align-middle"><strong>2.080.000 đ</strong></td>
+                      <td class="align-middle">
+                        <input
+                          id="quantity"
+                          type="number"
+                          value="1"
+                          class="form-control quantity-input"
+                        />
+                      </td>
                       <td class="align-middle">
                         <a href="#" class="text-dark"
-                          ><i class="fa fa-trash"></i
+                          ><i class="far fa-trash-alt"></i
                         ></a>
                       </td>
                     </tr>
@@ -146,10 +161,17 @@
                       </th>
 
                       <td class="align-middle"><strong>875.000 đ</strong></td>
-                      <td class="align-middle"><strong>1</strong></td>
+                      <td class="align-middle">
+                        <input
+                          id="quantity"
+                          type="number"
+                          value="1"
+                          class="form-control quantity-input"
+                        />
+                      </td>
                       <td class="align-middle">
                         <a href="#" class="text-dark"
-                          ><i class="fa fa-trash"></i
+                          ><i class="far fa-trash-alt"></i
                         ></a>
                       </td>
                     </tr>
@@ -274,15 +296,22 @@
       });
     </script>
 
+    <script>
+      $(function () {
+        $(".header").load("header.html");
+      });
+    </script>
+
     <script
       type="text/javascript"
       src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
     ></script>
+    <script src="js/home.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
