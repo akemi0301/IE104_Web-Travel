@@ -79,26 +79,26 @@ header .search-input {
   outline: none;
   font-size: 1rem;
 }
-header .navbar {
+header .ob-navbar {
   position: absolute;
   padding: 5px;
   right: 0;
 }
-header .navbar-list {
+header .ob-navbar-list {
   list-style: none;
   display: flex;
 }
-header .navbar li {
+header .ob-navbar li {
   margin: 0 0.6rem;
   display: inline-flex;
   align-items: center;
 }
-header .navbar a {
+header .ob-navbar a {
   font-size: 1.2rem;
   color: #333;
   transition: 0.2s linear;
 }
-header .navbar a span {
+header .ob-navbar a span {
   display: none;
 }
 .fas {
@@ -112,8 +112,8 @@ header .nav-toggle {
   top: 5.5rem;
   opacity: 1;
 }
-header .navbar ul li .active,
-header .navbar ul li a:hover {
+header .ob-navbar ul li .active,
+header .ob-navbar ul li a:hover {
   color: var(--main-color);
 }
 header .fa-bars {
@@ -145,7 +145,7 @@ header .fa-bars {
     display: block;
     font-size: 2rem;
   }
-  header .navbar {
+  header .ob-navbar {
     position: fixed;
     top: -100rem;
     left: 50%;
@@ -158,21 +158,21 @@ header .fa-bars {
     transition: 0.2s linear;
     opacity: 0;
   }
-  header .navbar ul {
+  header .ob-navbar ul {
     flex-flow: column;
     padding-left: 0;
   }
-  header .navbar ul li {
+  header .ob-navbar ul li {
     margin: 0.5rem 0;
     width: 100%;
     text-align: center;
   }
-  header .navbar ul li a {
+  header .ob-navbar ul li a {
     display: block;
     font-size: 1.5rem;
     padding: 0.2rem;
   }
-  header .navbar li a span {
+  header .ob-navbar li a span {
     display: unset;
   }
   header .nav-toggle {
