@@ -56,15 +56,15 @@ if (isset($_POST["submit"])) {
 
           <div class="info">
             <div class="information">
-              <img src="/images/ContactUs/img/location.png" class="icon" alt="" />
+              <img src="images/ContactUs/img/location.png" class="icon" alt="" />
               <p>Khu phố 6, Linh Trung, Thủ Đức</p>
             </div>
             <div class="information">
-              <img src="/images/ContactUs/img/email.png" class="icon" alt="" />
+              <img src="images/ContactUs/img/email.png" class="icon" alt="" />
               <p>thanhnluit@gmail.com</p>
             </div>
             <div class="information">
-              <img src="/images/ContactUs/img/phone.png" class="icon" alt="" />
+              <img src="images/ContactUs/img/phone.png" class="icon" alt="" />
               <p>123-456-789</p>
             </div>
           </div>
