@@ -1,9 +1,7 @@
-<!-- Code by Brave Coder - https://youtube.com/BraveCoder -->
-
 <?php
 session_start();
 if (isset($_SESSION['SESSION_EMAIL'])) {
-    header("Location: welcome.php");
+    header("Location: ../home.html");
     die();
 }
 
@@ -34,7 +32,7 @@ if (isset($_POST['submit'])) {
 
         if (empty($row['code'])) {
             $_SESSION['SESSION_EMAIL'] = $email;
-            header("Location: welcome.php");
+            header("Location: ../home.html");
         } else {
             $msg = "<div class='alert alert-info'>Trước tiên, hãy xác minh tài khoản của bạn và thử lại.</div>";
         }
