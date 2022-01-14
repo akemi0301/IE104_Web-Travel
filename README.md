@@ -1,6 +1,5 @@
 # IE104_Web-Travel
 Đồ án môn học IE104
-<<<<<<< HEAD
 ## Cách để get header.
 
     <body>
